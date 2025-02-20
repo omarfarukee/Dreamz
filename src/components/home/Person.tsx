@@ -1,14 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
-import person1 from "@/assets/person/person.JPG";
-import avatar from "@/assets/person/avatar.JPG";
 
 const Person = () => {
   return (
     <div className="relative w-full h-[90vh] z-10 mt-40 mb-40">
       {/* Image */}
-      <Image
-        src={person1}
+      <img
+        src="https://i.imgur.com/w6O0LIn.jpeg"
         alt="person"
         className="w-full h-full object-cover"
       />
@@ -28,7 +26,7 @@ const Person = () => {
         </p>
         <div className="flex items-center gap-5 mt-20" data-aos="fade-right"
                     data-aos-duration="3000">
-                <Image alt="avatar" src={avatar} className="w-20 h-20 rounded-full"/>
+                <img alt="avatar" src="https://i.imgur.com/Y0KWvDO.png" className="w-20 h-20 rounded-full"/>
                 <div>
                     <p className="text-2xl text-red-500">ALi Hossen</p>
                     <p className="">CEO, Dreamz INS Technology</p>

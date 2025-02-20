@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "dreams",
+  title: "DREAMS Instrument technology",
   description: "Generated Next js",
 };
 

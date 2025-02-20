@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import person1 from "@/assets/person/person.png";
 import blob from "@/assets/person/blob.gif";
-import avatar from "@/assets/person/avatar.JPG";
 const PersonTwo = () => {
     return (
         <div className="h-[80vh] w-full  relative z-10 flex justify-center mt-40">
@@ -25,7 +24,7 @@ const PersonTwo = () => {
                     </p>
                     <div className="flex items-center gap-5 mt-20" data-aos="fade-left"
                         data-aos-duration="3000">
-                        <Image alt="avatar" src={avatar} className="w-20 h-20 rounded-full" />
+                        <img alt="avatar" src="https://i.imgur.com/Y0KWvDO.png" className="w-20 h-20 rounded-full" />
                         <div>
                             <p className="text-2xl text-red-500">ALi Hossen</p>
                             <p className="">CEO, Dreamz INS Technology</p>
