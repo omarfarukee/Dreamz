@@ -1,30 +1,19 @@
-"use client";
-import { MdOutlineMarkEmailRead } from "react-icons/md";
-import { SlPhone } from "react-icons/sl";
-import { CiLocationOn } from "react-icons/ci";
-import { TiArrowRight } from "react-icons/ti";
-import { CiGlobe } from "react-icons/ci";
-import { LuMessageSquareShare } from "react-icons/lu";
-import { FaRegClock } from "react-icons/fa";
-import { HiOutlineSparkles } from "react-icons/hi2";
-import { useEffect, useState } from "react";
+'use client';
 
-const FooterIcons = [
-    { icon: <LuMessageSquareShare />, title: "Chat With Us", desc: "Live chat support available" },
-    { icon: <CiGlobe />, title: "Visit Us", desc: "Schedule an office visit" },
-    { icon: <FaRegClock />, title: "24/7 Support", desc: "Always here to help" },
-];
+import { Facebook, Twitter, Linkedin, Mail, MapPin, Phone, Flame } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import navLogo from "@/assets/logo/logo.png";
+import Image from 'next/image';
+export function FooterTwo() {
+    const [isVisible, setIsVisible] = useState(false);
 
-export default function FooterTwo() {
-
-    const [isMounted, setIsMounted] = useState(false);
     useEffect(() => {
-        setIsMounted(true);
+        setIsVisible(true);
     }, []);
 
-    if (!isMounted) return null;
     return (
-        <footer className="relative bg-[#353530] mt-28">
+        <footer className="relative min-h-[80vh]">
+
             {/* Wave Pattern */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
                 <svg
@@ -45,105 +34,144 @@ export default function FooterTwo() {
 
             </div>
 
-            {/* Main Content */}
-            <div className="relative container mx-auto px-4 pt-32 pb-16">
-                {/* Floating Contact Cards */}
-                <div className=" grid-cols-1 md:grid-cols-3 gap-6 -mt-48 mb-20 hidden">
-                    {FooterIcons.map(({ icon, title, desc }, index) => (
-                        <div 
-                            key={index}
-                            className="group relative bg-white rounded-2xl shadow-xl p-8 hover:-translate-y-2 transition-all duration-300"
-                        >
-                            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            <div className="relative">
-                                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    {icon}
-                                </div>
-                                <h3 className="text-xl font-semibold mb-2">{title}</h3>
-                                <p className="text-white">{desc}</p>
-                                <TiArrowRight className="w-5 h-5 text-primary absolute bottom-0 right-0 opacity-0 group-hover:opacity-100 transition-all duration-300" />
-                            </div>
-                        </div>
+            {/* Animated background effects */}
+            <div className="absolute inset-0 overflow-hidden ">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" />
+                {/* Floating particles */}
+                <div className="absolute top-0 left-0 w-full h-full">
+                    {[...Array(3)].map((_, i) => (
+                        <div
+                            key={i}
+                            className="absolute w-2 h-2 bg-gold/30 rounded-full animate-float"
+                            style={{
+                                left: `${Math.random() * 100}%`,
+                                animationDelay: `${i * 2}s`,
+                                animationDuration: `${8 + i * 2}s`
+                            }}
+                        />
                     ))}
                 </div>
+            </div>
 
-                {/* Main Footer Grid */} 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                    {/* Company Info */}
-                    <div className="space-y-6">
-                        <div className="flex items-center gap-2">
-                            <HiOutlineSparkles className="w-6 h-6 text-primary" />
-                            <h2 className="text-2xl font-bold">Company</h2>
+            <div className="relative max-w-7xl mx-auto h-full px-10 pt-[10%]">
+                {/* Main footer content */}
+                <div className={`grid grid-cols-1 md:grid-cols-12 gap-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    {/* Brand section */}
+                    <div className="md:col-span-5 space-y-6">
+                        <div className="flex items-center gap-3">
+                            <Image src={navLogo} alt='logo' className='w-40'/>
                         </div>
-                        <p className="text-white">
-                            Creating digital experiences that inspire and innovate.
+                        <p className="text-white leading-relaxed text-lg">
+                            Where innovation meets elegance. Creating digital experiences that leave a lasting impression.
                         </p>
-                        <div className="flex flex-col gap-4">
-                            {[{ icon: MdOutlineMarkEmailRead, text: "hello@company.com" }, { icon: SlPhone, text: "+1 (555) 123-4567" }, { icon: CiLocationOn, text: "123 Innovation Drive" }].map(({ icon: Icon, text }, index) => (
-                                <div key={index} className="group flex items-center gap-3 text-white">
-                                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                                        <Icon className="w-4 h-4" />
+                        <div className="pt-4">
+                            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r duration-300 transition-all from-yellow-400 to-red-600/20 border border-yellow-100 hover:bg-yellow-200">
+                                <Flame className="w-5 h-5 text-gold mr-2 animate-flicker" />
+                                <span className="text-gold">Subscribe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Navigation */}
+                    <div className="md:col-span-3 space-y-8">
+                        <h3 className="text-[#fcd362] font-semibold text-xl">Navigation</h3>
+                        <ul className="space-y-4">
+                            {['About', 'Services', 'Portfolio', 'Contact'].map((item) => (
+                                <li key={item}>
+                                    <a
+                                        href="#"
+                                        className="group relative text-white hover:text-gold transition-colors duration-300 flex items-center"
+                                    >
+                                        <span className="absolute left-0 w-0 h-0.5 bg-gradient-to-r from-gold to-red-600 group-hover:w-full transition-all duration-300" />
+                                        {item}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Connect section */}
+                    <div className="md:col-span-4 space-y-8">
+                        <h3 className="text-[#fcd362] font-semibold text-xl">Connect With Us</h3>
+
+                        {/* Social Media Icons with enhanced hover effects */}
+                        <div className="flex justify-start gap-6">
+                            {[
+                                { Icon: Facebook, label: 'Facebook', href: '#', color: '#1877f2' },
+                                { Icon: Twitter, label: 'Twitter', href: '#', color: '#1da1f2' },
+                                { Icon: Linkedin, label: 'LinkedIn', href: '#', color: '#0a66c2' },
+                                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+                            ].map(({ Icon, label, href, color }) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    className="group relative"
+                                    aria-label={label}
+                                >
+                                    {/* Outer circle with rotating border */}
+                                    <div className="absolute -inset-0.5 bg-gradient-to-r from-gold via-red-600 to-gold rounded-full opacity-75 group-hover:opacity-100 blur-sm group-hover:blur transition duration-500 group-hover:animate-spin"></div>
+
+                                    {/* Main circle */}
+                                    <div className="relative w-12 h-12 rounded-full bg-[#fcd36233] flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-12">
+                                        {/* Gradient overlay */}
+                                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/20 to-red-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                                        {/* Icon */}
+                                        <Icon className="w-5 h-5 text-white group-hover:text-gold transition-all duration-500 relative z-10 group-hover:animate-bounce" />
+
+                                        {/* Ripple effect */}
+                                        <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100">
+                                            <div className="absolute inset-0 rounded-full bg-gold/20 animate-ping"></div>
+                                        </div>
                                     </div>
-                                    <span className="group-hover:text-primary transition-colors duration-300">{text}</span>
-                                </div>
+                                </a>
                             ))}
                         </div>
-                    </div>
 
-                    {/* Quick Links */}
-                    <div className="grid grid-cols-2 gap-8">
-                        {[{ title: "Company", links: ["About", "Careers", "Partners", "News"] }, { title: "Resources", links: ["Blog", "Newsletter", "Events", "Help center"] }].map((section, index) => (
-                            <div key={index}>
-                                <h3 className="text-lg font-semibold mb-6">{section.title}</h3>
-                                <ul className="space-y-4">
-                                    {section.links.map((link) => (
-                                        <li key={link}>
-                                            <a href="#" className="text-white hover:text-primary flex items-center group">
-                                                <span className="relative">
-                                                    {link}
-                                                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
-                                                </span>
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
+                        {/* Contact Information */}
+                        <div className="space-y-4 pt-4">
+                            <div className="flex items-center gap-3 group">
+                                <div className="w-10 h-10 rounded-full bg-[#fcd36233] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
+                                    <Mail className="w-4 h-4 text-white group-hover:text-gold transition-colors duration-300" />
+                                </div>
+                                <a href="mailto:contact@yourbrand.com" className="text-white group-hover:text-gold transition-colors duration-300">
+                                    contact@yourbrand.com
+                                </a>
                             </div>
-                        ))}
-                    </div>
 
-                    {/* Newsletter */}
-                    <div className="lg:col-span-2 bg-[#ffffff0e] rounded-2xl p-8">
-                        <h3 className="text-xl font-semibold mb-2 text-yellow-500">Stay in the Loop</h3>
-                        <p className=" mb-6">Subscribe to our newsletter for exclusive updates and insights.</p>
-                        <form className="space-y-4">
-                            <div className="relative">
-                                <input
-                                    type="email"
-                                    placeholder="Enter your email"
-                                    className="w-full px-4 py-3 rounded-xl bg-white border-2 border-transparent focus:border-primary focus:outline-none transition-colors duration-300"
-                                />
-                                <button
-                                    type="submit"
-                                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white px-4 py-1.5 rounded-lg hover:bg-primary/90 transition-colors duration-300"
-                                >
-                                    Subscribe
-                                </button>
+                            <div className="flex items-center gap-3 group">
+                                <div className="w-10 h-10 rounded-full bg-[#fcd36233] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
+                                    <Phone className="w-4 h-4 text-white group-hover:text-gold transition-colors duration-300" />
+                                </div>
+                                <a href="tel:+1234567890" className="text-white group-hover:text-gold transition-colors duration-300">
+                                    +1 (234) 567-890
+                                </a>
                             </div>
-                            <p className="text-sm text-gray-500">
-                                By subscribing, you agree to our Privacy Policy and consent to receive updates.
-                            </p>
-                        </form>
+
+                            <div className="flex items-center gap-3 group">
+                                <div className="w-10 h-10 rounded-full bg-[#fcd36233] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
+                                    <MapPin className="w-4 h-4 text-white group-hover:text-gold transition-colors duration-300" />
+                                </div>
+                                <span className="text-white group-hover:text-gold transition-colors duration-300">
+                                    123 Business Avenue, Suite 100<br />
+                                    New York, NY 10001
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
-                <div className="mt-16 pt-8 border-t">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-white">
-                        <p>© {new Date().getFullYear()} Company. All rights reserved.</p>
-                        <div className="flex gap-8 text-sm">
-                            <a href="#" className="hover:text-primary transition-colors">Privacy</a>
-                            <a href="#" className="hover:text-primary transition-colors">Terms</a>
-                            <a href="#" className="hover:text-primary transition-colors">Cookies</a>
+                {/* Bottom bar */}
+                <div className={`mt-16 pt-8 border-t border-gray-800 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <p className="text-gray-500">
+                            © {new Date().getFullYear()} Your Brand. All rights reserved.
+                        </p>
+                        <div className="flex items-center gap-6 text-gray-500">
+                            <a href="#" className="hover:text-gold transition-colors duration-300">Privacy</a>
+                            <a href="#" className="hover:text-gold transition-colors duration-300">Terms</a>
+                            <a href="#" className="hover:text-gold transition-colors duration-300">Sitemap</a>
                         </div>
                     </div>
                 </div>
