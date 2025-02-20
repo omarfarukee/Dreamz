@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --background: #fffaf4;
+  --foreground: #171717; */
+  --background: #01010f;
+  --foreground: #fff;
+  --primary:#fcd462;
+  --secondary:#e5010b;
+}
+::-webkit-scrollbar{
+  width: 0px;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Oswald", serif;
+}
+
+
+/* gradient bg start  */
+.gradient-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fcd36242 0%, #01010f 60%);
+}
+.gradient-bg-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fcd362d5 0%, #01010f 60%);
+}
+
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.loading-animation {
+  animation: fade-in-out 2s ease-in-out infinite; /* Infinite loop of fade-in-out */
+}
+
+/* navbar  */
+/* Menu Button */
+#menu-toggle {
+  background: none;
+  border: none;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  gap: 19px;
+}
+
+/* Menu Lines */
+.line {
+  background: #777777; /* Black lines by default */
+  transition: 0.3s ease-in-out;
+  height: 2px;
+  border-radius: 5px;
+}
+
+/* Dark Overlay */
+#menu-overlay {
+  position: fixed;
+  top: -100%;
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  background: #1c1b19;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+/* Menu Items */
+.menu-item {
+  color: #fff;
+  margin: 15px 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+/* Change menu button color when active */
+.active .line {
+  background: white;
+}
+
+/* Animate to 'X' when active */
+.active .line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.navbar-section{
+    padding-left: 25px ;
+    padding-right: 25px;
+}
+
+/* navbar end */
+
+
+
+/* card css  */
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  background: transparent;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.cardLink {
+  text-decoration: none;
+}
+
+.card {
+  width: 300px; /* Fixed width */
+  height: 500px; /* Fixed height */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+}
+
+.coverImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+
+.wrapper::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(12, 13, 19, 0.5) 0%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.wrapper::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+
+.card:hover .wrapper::after {
+  height: 120px;
+}
+
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+
+/* //////////////////////////// */
+
+
+/* marquee up down start  */
+.marquee-content {
+  animation: scroll-up 40s linear infinite;
+}
+
+.marquee-content-down {
+  animation: scroll-down 40s linear infinite;
+}
+
+@keyframes scroll-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-66.666%); /* Because we tripled the content */
+  }
+}
+
+@keyframes scroll-down {
+  from {
+    transform: translateY(-66.666%); /* Because we tripled the content */
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.hover\:pause:hover {
+  animation-play-state: paused;
+}
+/* poster */
