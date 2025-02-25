@@ -7,7 +7,7 @@ import React, { useEffect, useRef, useState, useCallback } from "react";
 import { BsArrowDown } from "react-icons/bs";
 
 
-interface CountryData {
+interface ArtData {
   id: number;
   image: string;
   alt?: string;
@@ -15,48 +15,48 @@ interface CountryData {
 }
 
 // Dummy data instead of API
-const dummyData: CountryData[] = [
+const dummyData: ArtData[] = [
   {
     id: 1,
     image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art1.png",
-    alt: "Country 1",
+    alt: "Art 1",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
   },
   {
     id: 2,
     image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art3.png",
-    alt: "Country 2",
+    alt: "Art 2",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
   },
   {
     id: 3,
     image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art2.png",
-    alt: "Country 3",
+    alt: "Art 3",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
   },
   {
     id: 4,
     image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art4.png",
-    alt: "Country 4",
+    alt: "Art 4",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
   },
   {
     id: 5,
     image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art5.png",
-    alt: "Country 5",
+    alt: "Art 5",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   },
 ];
 
 export default function BannerScroll() {
-  const [data, setData] = useState<CountryData[]>([]);
-  const countryImgRefs = useRef<HTMLDivElement[]>([]);
-  const countryImgContainerRef = useRef<HTMLDivElement | null>(null);
+  const [data, setData] = useState<ArtData[]>([]);
+  const ArtImgRefs = useRef<HTMLDivElement[]>([]);
+  const ArtImgContainerRef = useRef<HTMLDivElement | null>(null);
 
   // Fetching dummy data instead of API
   useEffect(() => {
@@ -68,19 +68,19 @@ export default function BannerScroll() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    if (data.length > 0 && countryImgContainerRef.current) {
+    if (data.length > 0 && ArtImgContainerRef.current) {
       const isMobile = window.innerWidth <= 768;
       const xPercentValue = isMobile
-        ? -120 * (countryImgRefs.current.length - 1)
-        : -106 * (countryImgRefs.current.length - 1);
+        ? -120 * (ArtImgRefs.current.length - 1)
+        : -106 * (ArtImgRefs.current.length - 1);
 
-      const animation = gsap.to(countryImgRefs.current, {
+      const animation = gsap.to(ArtImgRefs.current, {
         xPercent: xPercentValue,
         ease: "none",
         scrollTrigger: {
-          trigger: countryImgContainerRef.current,
+          trigger: ArtImgContainerRef.current,
           scrub: 1,
-          end: `+=${countryImgContainerRef.current.offsetWidth}`,
+          end: `+=${ArtImgContainerRef.current.offsetWidth}`,
           pin: true,
           anticipatePin: 1, // ✅ Prevents pinning issues
         },
@@ -95,7 +95,7 @@ export default function BannerScroll() {
 
   // Callback ref to assign elements correctly
   const setRef = useCallback((el: HTMLDivElement | null, index: number) => {
-    if (el) countryImgRefs.current[index] = el;
+    if (el) ArtImgRefs.current[index] = el;
   }, []);
 
   return (
@@ -106,7 +106,7 @@ export default function BannerScroll() {
       </div>
       <section
         className="min-h-screen flex flex-nowrap items-center space-x-10 md:pl-[22%] pl-0"
-        ref={countryImgContainerRef}
+        ref={ArtImgContainerRef}
       >
 
         <div className="absolute left-[5%] mt-[4%]">

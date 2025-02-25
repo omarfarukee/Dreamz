@@ -6,7 +6,7 @@ import { CiPause1, CiPlay1 } from "react-icons/ci";
 
 const slides = [
     {
-        video: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/videos/1.mp4",
+        video: "/assets/videos/1.mp4",
     },
 ];
 
