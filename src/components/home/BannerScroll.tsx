@@ -99,9 +99,9 @@ export default function BannerScroll() {
   }, []);
 
   return (
-    <main className="w-full mt-20 mb-20 relative">
+    <main className="w-full  mt-20 mb-20 relative">
       <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[-3%] -z-10 left-[-20%]"></div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-20">
         <h1 className="text-5xl">Some Art Work</h1>
       </div>
       <section

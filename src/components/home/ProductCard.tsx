@@ -42,10 +42,10 @@ const products = [
 
 const ProductCard = () => {
   return (
-    <div className="relative">
+    <div className="relative min-h-[120vh]">
           <div className="absolute left-[45%] top-[5%]" >
           <div className="flex justify-center mt-5 z-20 relative">
-            <h1 className="text-5xl text-[#fcd462]" data-aos="fade-up"
+            <h1 className="text-5xl text-[#fcd462] mr-10" data-aos="fade-up"
                         data-aos-duration="3000">Our Machines</h1>
           </div>
       </div>
@@ -61,7 +61,7 @@ const ProductCard = () => {
           href={product.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="cardLink  z-20"
+          className="cardLink mt-20 z-20"
         >
           <div className="card">
             <div className="wrapper">
