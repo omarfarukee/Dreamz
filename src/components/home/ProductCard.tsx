@@ -52,15 +52,16 @@ const ProductCard = () => {
        <div className="cardContainer">
 
        {/* gradient bg  */}
-       <div className="gradient-bg   lg:h-[120vh] w-[1300px]  absolute top-[-40%] right-[-20%]" ></div>
+       <div className="gradient-bg   lg:h-[120vh]  w-[50%]  absolute top-[-40%] right-[-20%] -z-20" ></div>
             {/* gradient bg end */}
+
       {products.map((product) => (
         <a
           key={product.id}
           href={product.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="cardLink"
+          className="cardLink  z-20"
         >
           <div className="card">
             <div className="wrapper">

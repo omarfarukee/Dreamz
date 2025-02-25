@@ -34,7 +34,7 @@ const Counter = () => {
 
   return (
     <div className="h-[70vh] z-20 relative mb-[400px] mt-40" ref={counterRef}>
-                          <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute -z-30 top-[-20%] left-[-20%]"></div>
+                          <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute -z-40 top-[-20%] left-[-20%]"></div>
       <div className="flex justify-center flex-col items-center" data-aos="fade-up"
                         data-aos-duration="3000">
         <div>

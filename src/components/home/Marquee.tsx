@@ -11,8 +11,8 @@ export function Marquees() {
         <div className="mt-40 min-h-[80vh] relative">
 
             {/* gradient bg  */}
-            <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[-40%] left-[-25%]"></div>
-            <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[-40%] right-[-25%]"></div>
+            <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[-40%] left-[-25%] -z-20"></div>
+            <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[-40%] right-[-25%] -z-20"></div>
             {/* gradient bg end */}
 
             {/* Marquee for Left to Right */}

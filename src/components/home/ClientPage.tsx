@@ -174,7 +174,7 @@ export default function ClientPage() {
           </div>
       </div>
 
-       <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute  top-[5%] left-[80%] "></div>
+       <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute -z-20  top-[5%] left-[80%] "></div>
       <div className="flex justify-center">
       <div className=" w-[85%] flex justify-center">
         

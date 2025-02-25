@@ -76,7 +76,7 @@ export default function VideoSection() {
     return (
         <div className=" flex min-h-[100vh] justify-center items-center relative">
             {/* gradient bg  */}
-            <div className="gradient-bg  lg:h-[800px] w-[1000px]  absolute top-[-20%] "></div>
+            <div className="gradient-bg  lg:h-[800px] w-[1000px] -z-20 absolute top-[-20%] "></div>
             {/* gradient bg end */}
 
             <h1 className="text-[20em] font-bold uppercase absolute top-[5%] text-[#9c9c9c0c]">Dreamz</h1>

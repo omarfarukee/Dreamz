@@ -18,35 +18,35 @@ interface ArtData {
 const dummyData: ArtData[] = [
   {
     id: 1,
-    image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art1.png",
+    image: "/assets/art/art1.png",
     alt: "Art 1",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
   },
   {
     id: 2,
-    image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art3.png",
+    image: "/assets/art/art3.png",
     alt: "Art 2",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
   },
   {
     id: 3,
-    image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art2.png",
+    image: "/assets/art/art2.png",
     alt: "Art 3",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
   },
   {
     id: 4,
-    image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art4.png",
+    image: "/assets/art/art4.png",
     alt: "Art 4",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...",
   },
   {
     id: 5,
-    image: "https://hotch-potch-2016.s3.us-east-2.amazonaws.com/images/dreamz/art5.png",
+    image: "/assets/art/art5.png",
     alt: "Art 5",
     story:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",

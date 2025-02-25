@@ -15,7 +15,7 @@ const Person = () => {
       <div className="absolute inset-0 bg-gradient-to-l from-[#01010f] to-[#01010f44]" />
 
       {/* Text Content */}
-      <div className="absolute left-1/2 top-[10%] w-[600px]">
+      <div className="absolute left-1/2 top-[10%] w-[600px] z-20">
       <p className="text-lg text-red-500"data-aos="fade-right"
                     data-aos-duration="1000">Welcome to Dreamz</p>
         <h2 className="text-5xl mt-5 font-bold text-[#fcd462]" data-aos="fade-right"
