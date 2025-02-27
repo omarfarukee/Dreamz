@@ -100,13 +100,13 @@ export default function HeroSection() {
                 ease: easeInOut
               }}
             >
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white font-bold mb-2 sm:mb-4">
+              <h2 className="text-3xl sm:text-4xl  lg:text-9xl text-[#fcd462] font-bold mb-2 sm:mb-4">
                 {slides[currentSlide].title}
               </h2>
               {/* <h2 className="text-3xl absolute sm:text-4xl md:text-5xl lg:text-[20em] top-[-130%]  font-serif text-[#ffffff09] font-bold mb-2 sm:mb-4">
                 {slides[currentSlide].title}
               </h2> */}
-              <p className="text-sm sm:text-base md:text-sm text-white lg:text-sm">
+              <p className="text-md  text-white">
                 {slides[currentSlide].subtitle}
               </p>
             </motion.div>

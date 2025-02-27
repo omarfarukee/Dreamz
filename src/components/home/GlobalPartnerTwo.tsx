@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import partner1 from "@/assets/globalPartner/300px_01.jpg"
-import partner2 from "@/assets/globalPartner/300px_02.jpg"
+import partner2 from "@/assets/globalPartner/22.png"
 import partner3 from "@/assets/globalPartner/300px_05.jpg"
-import partner4 from "@/assets/globalPartner/300px_04.jpg"
+import partner4 from "@/assets/globalPartner/33.png"
 import partner5 from "@/assets/globalPartner/300px_08.jpg"
+import partner6 from "@/assets/globalPartner/11.png"
 
 import { useEffect, useState } from "react";
 import { FaGlobe, FaRocket, FaShieldAlt, FaBolt, FaBuilding } from "react-icons/fa";
@@ -43,6 +44,13 @@ const partners = [
     name: "altialimfita orfi",
     description: "Strategic business consulting and digital transformation",
     image: partner5.src,
+    icon: FaBuilding,
+  },
+  {
+    id: 6,
+    name: "altialimfita orfi",
+    description: "Strategic business consulting and digital transformation",
+    image: partner6.src,
     icon: FaBuilding,
   },
 ];

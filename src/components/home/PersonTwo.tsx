@@ -26,7 +26,7 @@ const PersonTwo = () => {
                         data-aos-duration="3000">
                         <img alt="avatar" src="https://i.imgur.com/Y0KWvDO.png" className="w-20 h-20 rounded-full" />
                         <div className="">
-                            <p className="text-2xl text-red-500">ALi Hossen</p>
+                            <p className="text-2xl text-red-500">Muhammad Ali Hossen</p>
                             <p className="">CEO, Dreamz INS Technology</p>
                         </div>
                     </div>

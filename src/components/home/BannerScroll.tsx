@@ -102,7 +102,7 @@ export default function BannerScroll() {
     <main className="w-full  mt-20 mb-20 relative">
       <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[-3%] -z-10 left-[-20%]"></div>
       <div className="flex justify-center mt-20">
-        <h1 className="text-5xl">Some Art Work</h1>
+        <h1 className="text-5xl text-[#fcd462]">Unveiling the Gold Making Art</h1>
       </div>
       <section
         className="min-h-screen flex flex-nowrap items-center space-x-10 md:pl-[22%] pl-0"
