@@ -14,14 +14,14 @@ const slides = [
   },
   {
     id: 2,
-    image: "/assets/machine/44.png",
+    image: "/assets/machine/Neww-03.png",
     title: "Demo Title",
     video: "/assets/videos/slider2.mp4",
     subtitle: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
   },
   {
     id: 3,
-    image: "/assets/machine/44.png",
+    image: "/assets/machine/333.png",
     title: "Demo Title",
     video: "/assets/videos/slider3.mp4",
     subtitle: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -50,6 +50,7 @@ export default function HeroSection() {
 
   return (
     <div className="relative h-[100vh] w-full overflow-hidden z-20 bg-gradient-to-r  from-black to-[#ffc8473f]">
+      <img src='/assets/wave/wave4.png' data-aos="fade-down" data-aos-duration="3000" data-aos-delay="2000" className='absolute top-[-35%] z-[500]' alt='bg'/>
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -113,7 +114,7 @@ export default function HeroSection() {
 
             {/* Small Preview Image - Hidden on mobile */}
             <motion.div
-              className="hidden md:block absolute z-20  lg:right-[10%] top-[30%]   w-20 sm:w-24 md:w-28 lg:w-[500px] h-20 sm:h-24 md:h-28 lg:h-[400px] overflow-hidden rounded object-cover"
+              className="hidden md:block absolute z-20  lg:right-[6%] top-[22%]  w-20 sm:w-24 md:w-28 lg:w-[500px]  overflow-hidden rounded object-cover"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}

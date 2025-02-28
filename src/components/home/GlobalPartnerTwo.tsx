@@ -1,56 +1,48 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import partner1 from "@/assets/globalPartner/300px_01.jpg"
+import partner1 from "@/assets/globalPartner/11.png"
 import partner2 from "@/assets/globalPartner/22.png"
-import partner3 from "@/assets/globalPartner/300px_05.jpg"
+import partner3 from "@/assets/globalPartner/300px_01.jpg"
 import partner4 from "@/assets/globalPartner/33.png"
 import partner5 from "@/assets/globalPartner/300px_08.jpg"
-import partner6 from "@/assets/globalPartner/11.png"
-
 import { useEffect, useState } from "react";
 import { FaGlobe, FaRocket, FaShieldAlt, FaBolt, FaBuilding } from "react-icons/fa";
+
 
 const partners = [
   {
     id: 1,
-    name: "Sisma",
+    name: "Fasti",
     description: "Leading innovation in AI and machine learning solutions",
     image: partner1.src,
     icon: FaGlobe,
   },
   {
     id: 2,
-    name: "kayrays",
+    name: "SMARTPRO",
     description: "Pioneering sustainable technology solutions for tomorrow",
     image: partner2.src,
     icon: FaRocket,
   },
   {
     id: 3,
-    name: "superbmelt",
+    name: "altialimfita orfi",
     description: "Enterprise-grade security infrastructure solutions",
     image: partner3.src,
     icon: FaShieldAlt,
   },
   {
     id: 4,
-    name: "youbaow",
+    name: "Mettler Toledo",
     description: "Renewable energy and smart grid technologies",
     image: partner4.src,
     icon: FaBolt,
   },
   {
     id: 5,
-    name: "altialimfita orfi",
+    name: "skyray",
     description: "Strategic business consulting and digital transformation",
     image: partner5.src,
-    icon: FaBuilding,
-  },
-  {
-    id: 6,
-    name: "altialimfita orfi",
-    description: "Strategic business consulting and digital transformation",
-    image: partner6.src,
     icon: FaBuilding,
   },
 ];
@@ -71,7 +63,10 @@ export default function Home() {
   const ActiveIcon = partners[activeIndex].icon;
 
   return (
-    <main className="min-h-screen bg-gradient-to-b  text-white overflow-hidden relative">
+    <section className="relative">
+    <img src="/assets/wave/wave2.png" className=" w-full absolute top-[-40%]" alt="wave"/>
+
+    <main className="min-h-[120vh]  bg-gradient-to-b  text-white overflow-hidden relative">
         <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[1%] -z-10 left-[20%]"></div>
       <div className="max-w-7xl mx-auto px-4 py-20">
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-4 text-[#fcd462]" data-aos="fade-up"
@@ -130,13 +125,14 @@ export default function Home() {
             >
               <div className="mb-6 transition-opacity duration-1000">
                 <ActiveIcon className="w-12 h-12 text-[#fcd462] mb-4 transition-all duration-500" />
-                <h2 className="text-3xl font-bold mb-2 transition-all duration-500">{partners[activeIndex].name}</h2>
+                <h2 className="text-3xl font-bold mb-2 transition-all duration-500 uppercase">{partners[activeIndex].name}</h2>
                 <p className="text-gray-400 text-lg transition-all duration-500">{partners[activeIndex].description}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </main>    
+  </section>
   );
 }

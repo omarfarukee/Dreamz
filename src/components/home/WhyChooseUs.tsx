@@ -116,7 +116,7 @@ const cardVariants = {
             </p>
           </motion.div>
   
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -130,7 +130,7 @@ const cardVariants = {
                     duration: 0.2
                   }
                 }}
-                className="group relative rounded-2xl p-8 bg-[#353530] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="group relative rounded-2xl p-8 bg-[#fcd36234]  overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
               >
                 {/* Background gradient overlay */}
                 <motion.div 
@@ -161,13 +161,13 @@ const cardVariants = {
                   </motion.div>
                   
                   <motion.h3 
-                    className="text-2xl font-semibold text-white group-hover:text-white mb-4 transition-colors duration-300"
+                    className="text-2xl font-semibold text-[#fcd462] group-hover:text-red-600 mb-4 transition-colors duration-300"
                   >
                     {feature.title}
                   </motion.h3>
                   
                   <motion.p 
-                    className="text-gray-50 group-hover:text-white/90 transition-colors duration-300"
+                    className="text-gray-50 group-hover:text-red-500 transition-colors duration-300"
                   >
                     {feature.description}
                   </motion.p>
