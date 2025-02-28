@@ -74,7 +74,7 @@ body {
 
 /* Menu Lines */
 .line {
-  background: #777777; /* Black lines by default */
+  background: #ffffff; /* Black lines by default */
   transition: 0.3s ease-in-out;
   height: 2px;
   border-radius: 5px;
