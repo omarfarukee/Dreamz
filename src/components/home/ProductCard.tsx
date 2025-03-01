@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import machine1 from "@/assets/machine/machine1.jpg";
+import machine1 from "@/assets/machine/machine1.png";
 import machine2 from "@/assets/machine/machine.png";
 import machine3 from "@/assets/machine/machine22.png";
 import machine4 from "@/assets/machine/machine2.png";
