@@ -42,7 +42,7 @@ const Counter = () => {
           <span className="text-2xl">at a glance</span>
         </div>
         <div className="flex items-center text-xl gap-2 mt-5">
-          <TbCirclesRelation size={20} className="text-red-500" />
+          <TbCirclesRelation size={20} className="text-white" />
           <p>Innovating industries Empowering Solution</p>
         </div>
       </div>

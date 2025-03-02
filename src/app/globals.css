@@ -5,7 +5,8 @@
 :root {
   /* --background: #fffaf4;
   --foreground: #171717; */
-  --background: #01010f;
+  --background: #ece9e1;
+  /* --background: #ffffdf; */
   --foreground: #fff;
   --primary:#fcd462;
   --secondary:#e5010b;
@@ -28,13 +29,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #fcd36242 0%, #01010f 60%);
+  /* background: radial-gradient(circle, #fcd36242 0%, #01010f 60%); */
+  /* background: radial-gradient(circle, #fc866242 0%, #ffffdf 60%); */
 }
 .gradient-bg-circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #fcd362d5 0%, #01010f 60%);
+  /* background: radial-gradient(circle, #fcd362d5 0%, #01010f 60%); */
+  /* background: radial-gradient(circle, #ffaa88d5 0%, #ffffdf 60%); */
 }
 
 
@@ -282,3 +285,41 @@ body {
   animation-play-state: paused;
 }
 /* poster */
+
+
+/* sub menu css  */
+/* Submenu container */
+.submenu {
+  position: absolute;
+ left: -50vw;
+  top: 100%; /* Position the submenu right below the parent */
+  width: 105vw; /* Full viewport width */
+  height: 400px; /* Set the height */
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s; /* Delayed visibility */
+  z-index: 10;
+}
+
+.group:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Slide up to original position */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Styling submenu items */
+.submenu-item {
+  padding: 20px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.submenu-item:hover {
+  color: blue; /* Highlight on hover */
+}
+
+
+/* sub menu css end  */

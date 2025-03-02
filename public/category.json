@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "category":"gold testing machine"
+    },
+    {
+        "id":2,
+        "category":"gold hallmark machine"
+    },
+    {
+        "id":3,
+        "category":"gold melting machine"
+    },
+    {
+        "id":4,
+        "category":"diamond testing machine"
+    },
+    {
+        "id":5,
+        "category":"gold refining machine"
+    },
+    {
+        "id":6,
+        "category":"chain making machine"
+    },
+    {
+        "id":7,
+        "category":"gold cleaning"
+    }
+]

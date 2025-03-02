@@ -6,7 +6,6 @@ import ClientPage from "@/components/home/ClientPage";
 import Counter from "@/components/home/Counter";
 import ExpertSolution from "@/components/home/ExpertSolution";
 import GlobalPartnerTwo from "@/components/home/GlobalPartnerTwo";
-import HeroSection from "@/components/home/HeroSection";
 import { Marquees } from "@/components/home/Marquee";
 import PersonTwo from "@/components/home/PersonTwo";
 import ProductCard from "@/components/home/ProductCard";
@@ -22,7 +21,6 @@ export default function HomePage() {
   }, []); // ✅ Fix: Runs only once  
   return (
     <section>
-      <HeroSection/>
       <ExpertSolution />
       <PersonTwo/>
       <Counter/>
