@@ -1,30 +1,37 @@
 [
     {
         "id":1,
+        "slug" : "gold-testing-machine",
         "category":"gold testing machine"
     },
     {
         "id":2,
+        "slug" : "gold-hallmark-machine",
         "category":"gold hallmark machine"
     },
     {
         "id":3,
+        "slug" : "gold-melting-machine",
         "category":"gold melting machine"
     },
     {
         "id":4,
+        "slug" : "diamond-testing-machine",
         "category":"diamond testing machine"
     },
     {
         "id":5,
+        "slug" : "gold-refining-machine",
         "category":"gold refining machine"
     },
     {
         "id":6,
+        "slug" : "chain-making-machine",
         "category":"chain making machine"
     },
     {
         "id":7,
+        "slug" : "gold-cleaning",
         "category":"gold cleaning"
     }
 ]

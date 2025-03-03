@@ -2,7 +2,7 @@
 
 import { Facebook, Twitter, Linkedin, Mail, MapPin, Phone, Flame } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import navLogo from "@/assets/logo/logo.png";
+import navLogo from "@/assets/logo/logo2.png";
 import Image from 'next/image';
 export function FooterTwo() {
     const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +24,7 @@ export function FooterTwo() {
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                         style={{
-                            fill: "#01010f",
+                            fill: "#ffffdf",
                             stroke: "#fcd462",  // Red stroke color
                             strokeWidth: "0",   // Adjust stroke thickness
                         }}
@@ -62,7 +62,7 @@ export function FooterTwo() {
                         <div className="flex items-center gap-3">
                             <Image src={navLogo} alt='logo' className='w-40'/>
                         </div>
-                        <p className="text-white leading-relaxed text-lg">
+                        <p className=" leading-relaxed text-lg">
                             Where innovation meets elegance. Creating digital experiences that leave a lasting impression.
                         </p>
                         <div className="pt-4">
@@ -75,13 +75,13 @@ export function FooterTwo() {
 
                     {/* Navigation */}
                     <div className="md:col-span-3 space-y-8">
-                        <h3 className="text-[#fcd362] font-semibold text-xl">Navigation</h3>
+                        <h3 className="text-[#c09128] font-semibold text-xl">Navigation</h3>
                         <ul className="space-y-4">
                             {['About', 'Services', 'Portfolio', 'Contact'].map((item) => (
                                 <li key={item}>
                                     <a
                                         href="#"
-                                        className="group relative text-white hover:text-gold transition-colors duration-300 flex items-center"
+                                        className="group relative  hover:text-gold transition-colors duration-300 flex items-center"
                                     >
                                         <span className="absolute left-0 w-0 h-0.5 bg-gradient-to-r from-gold to-red-600 group-hover:w-full transition-all duration-300" />
                                         {item}
@@ -93,7 +93,7 @@ export function FooterTwo() {
 
                     {/* Connect section */}
                     <div className="md:col-span-4 space-y-8">
-                        <h3 className="text-[#fcd362] font-semibold text-xl">Connect With Us</h3>
+                        <h3 className="text-[#c09128] font-semibold text-xl">Connect With Us</h3>
 
                         {/* Social Media Icons with enhanced hover effects */}
                         <div className="flex justify-start gap-6">
@@ -113,12 +113,12 @@ export function FooterTwo() {
                                     <div className="absolute -inset-0.5 bg-gradient-to-r from-gold via-red-600 to-gold rounded-full opacity-75 group-hover:opacity-100 blur-sm group-hover:blur transition duration-500 group-hover:animate-spin"></div>
 
                                     {/* Main circle */}
-                                    <div className="relative w-12 h-12 rounded-full bg-[#fcd36233] flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-12">
+                                    <div className="relative w-12 h-12 rounded-full bg-[#c0912833] flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-12">
                                         {/* Gradient overlay */}
                                         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/20 to-red-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                                         {/* Icon */}
-                                        <Icon className="w-5 h-5 text-white group-hover:text-gold transition-all duration-500 relative z-10 group-hover:animate-bounce" />
+                                        <Icon className="w-5 h-5  group-hover:text-gold transition-all duration-500 relative z-10 group-hover:animate-bounce" />
 
                                         {/* Ripple effect */}
                                         <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100">
@@ -132,28 +132,28 @@ export function FooterTwo() {
                         {/* Contact Information */}
                         <div className="space-y-4 pt-4">
                             <div className="flex items-center gap-3 group">
-                                <div className="w-10 h-10 rounded-full bg-[#fcd36233] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
-                                    <Mail className="w-4 h-4 text-white group-hover:text-gold transition-colors duration-300" />
+                                <div className="w-10 h-10 rounded-full bg-[#c0912833] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
+                                    <Mail className="w-4 h-4  group-hover:text-gold transition-colors duration-300" />
                                 </div>
-                                <a href="mailto:contact@yourbrand.com" className="text-white group-hover:text-gold transition-colors duration-300">
+                                <a href="mailto:contact@yourbrand.com" className=" group-hover:text-gold transition-colors duration-300">
                                     contact@yourbrand.com
                                 </a>
                             </div>
 
                             <div className="flex items-center gap-3 group">
-                                <div className="w-10 h-10 rounded-full bg-[#fcd36233] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
-                                    <Phone className="w-4 h-4 text-white group-hover:text-gold transition-colors duration-300" />
+                                <div className="w-10 h-10 rounded-full bg-[#c0912833] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
+                                    <Phone className="w-4 h-4  group-hover:text-gold transition-colors duration-300" />
                                 </div>
-                                <a href="tel:+1234567890" className="text-white group-hover:text-gold transition-colors duration-300">
+                                <a href="tel:+1234567890" className=" group-hover:text-gold transition-colors duration-300">
                                     +1 (234) 567-890
                                 </a>
                             </div>
 
                             <div className="flex items-center gap-3 group">
-                                <div className="w-10 h-10 rounded-full bg-[#fcd36233] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
-                                    <MapPin className="w-4 h-4 text-white group-hover:text-gold transition-colors duration-300" />
+                                <div className="w-10 h-10 rounded-full bg-[#c0912833] flex items-center justify-center group-hover:bg-gradient-to-br from-gold/20 to-red-600/20 transition-colors duration-300">
+                                    <MapPin className="w-4 h-4  group-hover:text-gold transition-colors duration-300" />
                                 </div>
-                                <span className="text-white group-hover:text-gold transition-colors duration-300">
+                                <span className=" group-hover:text-gold transition-colors duration-300">
                                     123 Business Avenue, Suite 100<br />
                                     New York, NY 10001
                                 </span>

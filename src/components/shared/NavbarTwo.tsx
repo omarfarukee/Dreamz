@@ -12,6 +12,7 @@ import { AiFillGold } from "react-icons/ai";
 interface ICategory {
     id: number;
     category: string;
+    slug : string
 }
 
 const NavbarTwo = () => {
@@ -43,7 +44,7 @@ const NavbarTwo = () => {
 
     return (
         <div
-            className={`fixed  w-full z-50 transition-all duration-500   rounded-br-2xl rounded-bl-xl border border-[#00000031] ${isScrolled ? "bg-gradient-to-r  from-[#edce67] to-[#e5010c59] backdrop-blur-lg shadow-md h-[110px] px-20 py-2" : "h-[90px] px-16"
+            className={`fixed  w-full z-50 transition-all duration-500   rounded-br-2xl rounded-bl-xl border border-[#00000031] ${isScrolled ? "bg-gradient-to-r  from-[#edce67] to-[#e5010c59] backdrop-blur-lg shadow-md h-[110px] px-20 py-2" : "h-[90px] px-16 bg-[#ffffdf]"
                 }`}
         >
             <div className="flex justify-between">
@@ -94,10 +95,12 @@ const NavbarTwo = () => {
                         </div>
 
                         <div className="submenu absolute rounded-lg ">
-                            <div className=" left-0  opacity-0 invisible transform justify-center flex translate-y-4  transition-all duration-300 text-black bg-white rounded-lg  group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" />
+                            <div className=" left-0  opacity-0 invisible transform justify-center flex translate-y-4  transition-all duration-300 text-black  rounded-lg  group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
                                 <ul className="flex w-[65%] mt-12 justify-center flex-wrap gap-5">
                                     {categories.map((item) => (
-                                        <Link key={item.id} href={`/catalogue/${item.id}`} className="submenu-item text-xl flex px-4 py-2 hover:text-red-500 w-[300px] items-center ">
+                                        <Link key={item.id} href={`/${item?.slug}`} className="submenu-item text-xl flex px-4 py-2 hover:text-red-500 w-[300px] items-center ">
                                             <p>{item?.category === "gold melting machine" && <GiMeltingMetal className="text-6xl text-[#e7c65b]" />}</p> 
                                             <p></p>{item?.category === "diamond testing machine" && <MdDiamond className="text-6xl text-[#e7c65b]" />}
                                             <p></p>{item?.category === "gold hallmark machine" && <GiGoldBar className="text-6xl text-[#e7c65b]" />}
