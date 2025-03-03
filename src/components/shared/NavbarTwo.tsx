@@ -97,7 +97,7 @@ const NavbarTwo = () => {
                             <div className=" left-0  opacity-0 invisible transform justify-center flex translate-y-4  transition-all duration-300 text-black bg-white rounded-lg  group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
                                 <ul className="flex w-[65%] mt-12 justify-center flex-wrap gap-5">
                                     {categories.map((item) => (
-                                        <Link key={item.id} href="#" className="submenu-item text-xl flex px-4 py-2 hover:text-red-500 w-[300px] items-center ">
+                                        <Link key={item.id} href={`/catalogue/${item.id}`} className="submenu-item text-xl flex px-4 py-2 hover:text-red-500 w-[300px] items-center ">
                                             <p>{item?.category === "gold melting machine" && <GiMeltingMetal className="text-6xl text-[#e7c65b]" />}</p> 
                                             <p></p>{item?.category === "diamond testing machine" && <MdDiamond className="text-6xl text-[#e7c65b]" />}
                                             <p></p>{item?.category === "gold hallmark machine" && <GiGoldBar className="text-6xl text-[#e7c65b]" />}

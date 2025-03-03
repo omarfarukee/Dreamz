@@ -4,11 +4,10 @@
         "category_id":1,
         "machine_name":"gold melting machine",
         "title":"machine",
-        "image":[
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg"
-        ],
+       "png_img":"/assets/machine2/machine.png",
+       "img_1":"/assets/machine2/machine1.png",
+       "img_2":"/assets/machine2/machine1.png",
+       "img_3":"/assets/machine2/machine1.png",
         "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima expedita eaque iure inventore nulla sunt vel dignissimos laboriosam explicabo voluptatum quam ad sequi, officia dolorem similique amet eum consectetur neque? Et molestiae temporibus vitae veritatis placeat repellat officia odio dolorum doloremque nisi aliquid excepturi ad obcaecati, earum saepe molestias in eos! Aliquid consequatur odit corrupti repudiandae nam quaerat tenetur est iste nulla, maiores illo in dolor! At commodi quam nihil voluptatum non? Sequi aut deleniti quo quia suscipit earum quod animi et consequuntur deserunt reiciendis maxime a fuga labore voluptate veritatis molestias unde illum impedit, alias vel architecto. Deleniti ratione eum ducimus nam hic modi nobis quidem quis, nulla temporibus maiores minima autem molestias, placeat id eos illum. Commodi, consectetur error dolorum animi quidem nam quasi maxime quibusdam quae inventore cupiditate molestiae eum nulla accusantium dolor. Voluptates molestias a porro cupiditate saepe consectetur neque quo commodi quam illum repellat dicta perspiciatis modi tempore deserunt enim illo esse, doloremque ea laboriosam soluta nemo. Explicabo dignissimos labore odit! Quibusdam adipisci soluta saepe obcaecati dolorem atque, sunt, quidem consectetur voluptate sapiente placeat tenetur iure, accusantium minus quia velit eveniet culpa. Vitae iusto nisi optio culpa sint eius neque laudantium magni labore quam?"
 
     },
@@ -17,11 +16,10 @@
         "category_id":1,
         "machine_name":"gold melting machine",
         "title":"machine",
-        "image":[
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg"
-        ],
+        "png_img":"/assets/machine2/machine2.png",
+        "img_1":"/assets/machine2/machine22.png",
+        "img_2":"/assets/machine2/machine1.png",
+        "img_3":"/assets/machine2/machine1.png",
         "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima expedita eaque iure inventore nulla sunt vel dignissimos laboriosam explicabo voluptatum quam ad sequi, officia dolorem similique amet eum consectetur neque? Et molestiae temporibus vitae veritatis placeat repellat officia odio dolorum doloremque nisi aliquid excepturi ad obcaecati, earum saepe molestias in eos! Aliquid consequatur odit corrupti repudiandae nam quaerat tenetur est iste nulla, maiores illo in dolor! At commodi quam nihil voluptatum non? Sequi aut deleniti quo quia suscipit earum quod animi et consequuntur deserunt reiciendis maxime a fuga labore voluptate veritatis molestias unde illum impedit, alias vel architecto. Deleniti ratione eum ducimus nam hic modi nobis quidem quis, nulla temporibus maiores minima autem molestias, placeat id eos illum. Commodi, consectetur error dolorum animi quidem nam quasi maxime quibusdam quae inventore cupiditate molestiae eum nulla accusantium dolor. Voluptates molestias a porro cupiditate saepe consectetur neque quo commodi quam illum repellat dicta perspiciatis modi tempore deserunt enim illo esse, doloremque ea laboriosam soluta nemo. Explicabo dignissimos labore odit! Quibusdam adipisci soluta saepe obcaecati dolorem atque, sunt, quidem consectetur voluptate sapiente placeat tenetur iure, accusantium minus quia velit eveniet culpa. Vitae iusto nisi optio culpa sint eius neque laudantium magni labore quam?"
 
     },
@@ -30,37 +28,46 @@
         "category_id":1,
         "machine_name":"gold melting machine",
         "title":"machine",
-        "image":[
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg"
-        ],
+        "png_img":"/assets/machine2/machine333.png",
+       "img_1":"/assets/machine2/machine3.png",
+       "img_2":"/assets/machine2/machine1.png",
+       "img_3":"/assets/machine2/machine1.png",
+        "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima expedita eaque iure inventore nulla sunt vel dignissimos laboriosam explicabo voluptatum quam ad sequi, officia dolorem similique amet eum consectetur neque? Et molestiae temporibus vitae veritatis placeat repellat officia odio dolorum doloremque nisi aliquid excepturi ad obcaecati, earum saepe molestias in eos! Aliquid consequatur odit corrupti repudiandae nam quaerat tenetur est iste nulla, maiores illo in dolor! At commodi quam nihil voluptatum non? Sequi aut deleniti quo quia suscipit earum quod animi et consequuntur deserunt reiciendis maxime a fuga labore voluptate veritatis molestias unde illum impedit, alias vel architecto. Deleniti ratione eum ducimus nam hic modi nobis quidem quis, nulla temporibus maiores minima autem molestias, placeat id eos illum. Commodi, consectetur error dolorum animi quidem nam quasi maxime quibusdam quae inventore cupiditate molestiae eum nulla accusantium dolor. Voluptates molestias a porro cupiditate saepe consectetur neque quo commodi quam illum repellat dicta perspiciatis modi tempore deserunt enim illo esse, doloremque ea laboriosam soluta nemo. Explicabo dignissimos labore odit! Quibusdam adipisci soluta saepe obcaecati dolorem atque, sunt, quidem consectetur voluptate sapiente placeat tenetur iure, accusantium minus quia velit eveniet culpa. Vitae iusto nisi optio culpa sint eius neque laudantium magni labore quam?"
+
+    },
+    {
+        "id":3,
+        "category_id":1,
+        "machine_name":"gold melting machine",
+        "title":"machine",
+        "png_img":"/assets/machine2/machine.png",
+       "img_1":"/assets/machine2/machine1.png",
+       "img_2":"/assets/machine2/machine1.png",
+       "img_3":"/assets/machine2/machine1.png",
         "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima expedita eaque iure inventore nulla sunt vel dignissimos laboriosam explicabo voluptatum quam ad sequi, officia dolorem similique amet eum consectetur neque? Et molestiae temporibus vitae veritatis placeat repellat officia odio dolorum doloremque nisi aliquid excepturi ad obcaecati, earum saepe molestias in eos! Aliquid consequatur odit corrupti repudiandae nam quaerat tenetur est iste nulla, maiores illo in dolor! At commodi quam nihil voluptatum non? Sequi aut deleniti quo quia suscipit earum quod animi et consequuntur deserunt reiciendis maxime a fuga labore voluptate veritatis molestias unde illum impedit, alias vel architecto. Deleniti ratione eum ducimus nam hic modi nobis quidem quis, nulla temporibus maiores minima autem molestias, placeat id eos illum. Commodi, consectetur error dolorum animi quidem nam quasi maxime quibusdam quae inventore cupiditate molestiae eum nulla accusantium dolor. Voluptates molestias a porro cupiditate saepe consectetur neque quo commodi quam illum repellat dicta perspiciatis modi tempore deserunt enim illo esse, doloremque ea laboriosam soluta nemo. Explicabo dignissimos labore odit! Quibusdam adipisci soluta saepe obcaecati dolorem atque, sunt, quidem consectetur voluptate sapiente placeat tenetur iure, accusantium minus quia velit eveniet culpa. Vitae iusto nisi optio culpa sint eius neque laudantium magni labore quam?"
 
     },
     {
         "id":4,
-        "category_id":1,
+        "category_id":2,
         "machine_name":"gold melting machine",
         "title":"machine",
-        "image":[
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg"
-        ],
+        "png_img":"/assets/machine2/machine.png",
+        "img_1":"/assets/machine2/machine1.png",
+        "img_2":"/assets/machine2/machine1.png",
+        "img_3":"/assets/machine2/machine1.png",
         "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima expedita eaque iure inventore nulla sunt vel dignissimos laboriosam explicabo voluptatum quam ad sequi, officia dolorem similique amet eum consectetur neque? Et molestiae temporibus vitae veritatis placeat repellat officia odio dolorum doloremque nisi aliquid excepturi ad obcaecati, earum saepe molestias in eos! Aliquid consequatur odit corrupti repudiandae nam quaerat tenetur est iste nulla, maiores illo in dolor! At commodi quam nihil voluptatum non? Sequi aut deleniti quo quia suscipit earum quod animi et consequuntur deserunt reiciendis maxime a fuga labore voluptate veritatis molestias unde illum impedit, alias vel architecto. Deleniti ratione eum ducimus nam hic modi nobis quidem quis, nulla temporibus maiores minima autem molestias, placeat id eos illum. Commodi, consectetur error dolorum animi quidem nam quasi maxime quibusdam quae inventore cupiditate molestiae eum nulla accusantium dolor. Voluptates molestias a porro cupiditate saepe consectetur neque quo commodi quam illum repellat dicta perspiciatis modi tempore deserunt enim illo esse, doloremque ea laboriosam soluta nemo. Explicabo dignissimos labore odit! Quibusdam adipisci soluta saepe obcaecati dolorem atque, sunt, quidem consectetur voluptate sapiente placeat tenetur iure, accusantium minus quia velit eveniet culpa. Vitae iusto nisi optio culpa sint eius neque laudantium magni labore quam?"
 
     },
     {
         "id":5,
-        "category_id":1,
+        "category_id":3,
         "machine_name":"gold melting machine",
         "title":"machine",
-        "image":[
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg",
-            "https://www.italimpianti.it/cache/system_images/c/400_400/images/catalogo/prodotti/1687/original/FIM-100RPG.jpg"
-        ],
+        "png_img":"/assets/machine2/machine.png",
+        "img_1":"/assets/machine2/machine1.png",
+        "img_2":"/assets/machine2/machine1.png",
+        "img_3":"/assets/machine2/machine1.png",
         "description":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima expedita eaque iure inventore nulla sunt vel dignissimos laboriosam explicabo voluptatum quam ad sequi, officia dolorem similique amet eum consectetur neque? Et molestiae temporibus vitae veritatis placeat repellat officia odio dolorum doloremque nisi aliquid excepturi ad obcaecati, earum saepe molestias in eos! Aliquid consequatur odit corrupti repudiandae nam quaerat tenetur est iste nulla, maiores illo in dolor! At commodi quam nihil voluptatum non? Sequi aut deleniti quo quia suscipit earum quod animi et consequuntur deserunt reiciendis maxime a fuga labore voluptate veritatis molestias unde illum impedit, alias vel architecto. Deleniti ratione eum ducimus nam hic modi nobis quidem quis, nulla temporibus maiores minima autem molestias, placeat id eos illum. Commodi, consectetur error dolorum animi quidem nam quasi maxime quibusdam quae inventore cupiditate molestiae eum nulla accusantium dolor. Voluptates molestias a porro cupiditate saepe consectetur neque quo commodi quam illum repellat dicta perspiciatis modi tempore deserunt enim illo esse, doloremque ea laboriosam soluta nemo. Explicabo dignissimos labore odit! Quibusdam adipisci soluta saepe obcaecati dolorem atque, sunt, quidem consectetur voluptate sapiente placeat tenetur iure, accusantium minus quia velit eveniet culpa. Vitae iusto nisi optio culpa sint eius neque laudantium magni labore quam?"
 
     }

@@ -176,6 +176,7 @@ body {
   transition: all 0.5s;
   position: absolute;
   width: 100%;
+  height: 400px;
   z-index: -1;
   border:3px solid #fcd462;
   border-top-left-radius:10px;
@@ -185,6 +186,9 @@ body {
 .card:hover .wrapper {
   transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+.card:hover .wrapper img {
+  display: none;
 }
 
 .wrapper::before,
@@ -248,7 +252,7 @@ body {
 
 .card:hover .character {
   opacity: 1;
-  transform: translate3d(0%, -30%, 100px);
+  transform: translate3d(0%, -50%, 800px);
 }
 
 /* //////////////////////////// */
