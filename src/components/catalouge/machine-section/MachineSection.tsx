@@ -13,6 +13,7 @@ type TMachine = {
   img_2: string;
   img_3: string;
   description: string;
+  features:string
 };
 
 type TProps = {

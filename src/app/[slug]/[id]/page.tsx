@@ -11,7 +11,7 @@ const SingMachineDetailsPage = async({ params }: TParams)=> {
     console.log({id});
     return (
         <div >
-           <SingleMachine id={id} category_id={0} machine_name={""} title={""} png_img={""} img_1={""} img_2={""} img_3={""} description={""}/>
+           <SingleMachine id={id} category_id={0} machine_name={""} title={""} png_img={""} img_1={""} img_2={""} img_3={""} description={""} features={[]} pdf={""}/>
         </div>
     );
 };

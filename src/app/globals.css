@@ -299,7 +299,7 @@ body {
  left: -50vw;
   top: 100%; /* Position the submenu right below the parent */
   width: 105vw; /* Full viewport width */
-  height: 400px; /* Set the height */
+  height: 300px; /* Set the height */
   background-color: white;
   opacity: 0;
   visibility: hidden;

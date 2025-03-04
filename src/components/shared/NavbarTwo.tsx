@@ -44,7 +44,7 @@ const NavbarTwo = () => {
 
     return (
         <div
-            className={`fixed  w-full z-50 transition-all duration-500   rounded-br-2xl rounded-bl-xl border border-[#00000031] ${isScrolled ? "bg-gradient-to-r  from-[#edce67] to-[#e5010c59] backdrop-blur-lg shadow-md h-[110px] px-20 py-2" : "h-[90px] px-16 bg-[#ffffdf]"
+            className={`fixed  w-full z-50 transition-all duration-500   rounded-br-2xl rounded-bl-xl border border-[#00000031] ${isScrolled ? "bg-gradient-to-r  from-[#edce67] to-[#e5010c59] backdrop-blur-lg shadow-md h-[110px] px-20 py-2" : "h-[90px] px-16"
                 }`}
         >
             <div className="flex justify-between">

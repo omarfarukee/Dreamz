@@ -18,7 +18,7 @@ import { useEffect } from "react";
 export default function HomePage() {
   useEffect(() => {
     AOS.init();
-  }, []); // ✅ Fix: Runs only once  
+  }, []);
   return (
     <section>
       <ExpertSolution />
