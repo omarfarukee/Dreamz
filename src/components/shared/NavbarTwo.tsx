@@ -12,7 +12,7 @@ import { AiFillGold } from "react-icons/ai";
 interface ICategory {
     id: number;
     category: string;
-    slug : string
+    slug: string
 }
 
 const NavbarTwo = () => {
@@ -84,10 +84,10 @@ const NavbarTwo = () => {
 
                             <Link href="/" className="relative block">
                                 <span className="group-hover:-translate-y-[120%] inline-block p-1 transition duration-500 ease-out">
-                                    <p className="flex items-center gap-1">Products <GoChevronDown /></p>
+                                    <p className="flex items-center gap-1">catalogue <GoChevronDown /></p>
                                 </span>
                                 <span className="absolute left-0 rotate-12 inline-block translate-y-[130%] p-1 transition duration-500 ease-out group-hover:-translate-y-0 group-hover:rotate-0">
-                                    <p className="flex items-center gap-1">Products <GoChevronDown /></p>
+                                    <p className="flex items-center gap-1">catalogue <GoChevronDown /></p>
                                 </span>
                             </Link>
 
@@ -95,18 +95,18 @@ const NavbarTwo = () => {
                         </div>
 
                         <div className="submenu absolute rounded-lg ">
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" />
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" />
                             <div className=" left-0  opacity-0 invisible transform justify-center flex translate-y-4  transition-all duration-300 text-black  rounded-lg  group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
                                 <ul className="flex w-[65%] mt-12 justify-center flex-wrap gap-5">
                                     {categories.map((item) => (
                                         <Link key={item.id} href={`/${item?.slug}`} className="submenu-item text-xl flex px-4 py-2 hover:text-red-500 w-[300px] items-center ">
-                                            <p>{item?.category === "gold melting machine" && <GiMeltingMetal className="text-6xl text-[#e7c65b]" />}</p> 
+                                            <p>{item?.category === "gold melting machine" && <GiMeltingMetal className="text-6xl text-[#e7c65b]" />}</p>
                                             <p></p>{item?.category === "diamond testing machine" && <MdDiamond className="text-6xl text-[#e7c65b]" />}
                                             <p></p>{item?.category === "gold hallmark machine" && <GiGoldBar className="text-6xl text-[#e7c65b]" />}
                                             <p></p>{item?.category === "gold testing machine" && <GiGoldStack className="text-6xl text-[#e7c65b]" />}
                                             <p></p>{item?.category === "gold cleaning" && <AiFillGold className="text-6xl text-[#e7c65b]" />}
-                                            <p></p>{item?.category === "gold refining machine" && <GiGoldNuggets  className="text-6xl text-[#e7c65b]" />}
+                                            <p></p>{item?.category === "gold refining machine" && <GiGoldNuggets className="text-6xl text-[#e7c65b]" />}
                                             <p></p>{item?.category === "chain making machine" && <GiGemChain className="text-6xl text-[#e7c65b]" />}
 
                                             {item.category}</Link>
@@ -119,10 +119,6 @@ const NavbarTwo = () => {
                         </div>
 
                     </div>
-
-
-
-
 
                     <div
                         className="relative h-10 overflow-hidden text-xl leading-6 text-black uppercase cursor-pointer group">
