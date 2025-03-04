@@ -183,10 +183,10 @@ export default function ClientPage() {
           <div className="relative   w-[300px]">
             <div className="h-[800px] overflow-hidden relative w-[300px]">
               {/* Top gradient overlay */}
-              <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#01010f] to-transparent z-10"></div>
+              <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#ffffdf] to-transparent z-10"></div>
               
               {/* Bottom gradient overlay */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#01010f] to-transparent z-10"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#ffffdf] to-transparent z-10"></div>
               
               <div className="marquee-content hover:pause">
                 {duplicatedClients.map((client, idx) => (
@@ -216,10 +216,10 @@ export default function ClientPage() {
           <div className="relative ">
             <div className="h-[800px] overflow-hidden relative w-[300px]">
               {/* Top gradient overlay */}
-              <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#01010f] to-transparent z-10"></div>
+              <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#ffffdf] to-transparent z-10"></div>
               
               {/* Bottom gradient overlay */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#01010f] to-transparent z-10"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#ffffdf] to-transparent z-10"></div>
               
               <div className="marquee-content-down hover:pause">
                 {duplicatedClientsSecond.map((client, idx) => (
@@ -250,10 +250,10 @@ export default function ClientPage() {
           <div className="relative  w-[300px]">
             <div className="h-[800px] overflow-hidden relative w-[300px]">
               {/* Top gradient overlay */}
-              <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#01010f] to-transparent z-10"></div>
+              <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#ffffdf] to-transparent z-10"></div>
               
               {/* Bottom gradient overlay */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#01010f] to-transparent z-10"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#ffffdf] to-transparent z-10"></div>
               
               <div className="marquee-content hover:pause">
                 {duplicatedClientsThird.map((client, idx) => (
@@ -283,10 +283,10 @@ export default function ClientPage() {
           <div className="relative ">
             <div className="h-[800px] overflow-hidden relative w-[300px]">
               {/* Top gradient overlay */}
-              <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#01010f] to-transparent z-10"></div>
+              <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#ffffdf] to-transparent z-10"></div>
               
               {/* Bottom gradient overlay */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#01010f] to-transparent z-10"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#ffffdf] to-transparent z-10"></div>
               
               <div className="marquee-content-down hover:pause">
                 {duplicatedClientsFour.map((client, idx) => (

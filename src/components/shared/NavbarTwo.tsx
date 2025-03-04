@@ -84,10 +84,10 @@ const NavbarTwo = () => {
 
                             <Link href="/" className="relative block">
                                 <span className="group-hover:-translate-y-[120%] inline-block p-1 transition duration-500 ease-out">
-                                    <p className="flex items-center gap-1">catalogue <GoChevronDown /></p>
+                                    <p className="flex items-center gap-1">products <GoChevronDown /></p>
                                 </span>
                                 <span className="absolute left-0 rotate-12 inline-block translate-y-[130%] p-1 transition duration-500 ease-out group-hover:-translate-y-0 group-hover:rotate-0">
-                                    <p className="flex items-center gap-1">catalogue <GoChevronDown /></p>
+                                    <p className="flex items-center gap-1">products <GoChevronDown /></p>
                                 </span>
                             </Link>
 
