@@ -9,6 +9,7 @@ import { GoChevronDown } from "react-icons/go";
 import { GiGemChain, GiGoldBar, GiGoldNuggets, GiGoldStack, GiMeltingMetal } from "react-icons/gi";
 import { MdDiamond } from "react-icons/md";
 import { AiFillGold } from "react-icons/ai";
+import { BiSolidPhoneCall } from "react-icons/bi";
 interface ICategory {
     id: number;
     category: string;
@@ -136,11 +137,14 @@ const NavbarTwo = () => {
                 </div>
 
 
-                <div className="flex items-center gap-2" >
+                <a href="#_" className="relative inline-flex items-center px-12 mt-5 h-16 overflow-hidden text-lg font-medium text-black border-2 border-black rounded-full hover:text-white group hover:bg-gray-50">
+                    <span className="absolute left-0 block w-full h-0 transition-all bg-black opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+                    <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+                    <BiSolidPhoneCall size={20} />
 
-                    button contact
-                </div>
-
+                    </span>
+                    <span className="relative">Contact</span>
+                </a>
             </div>
         </div>
     );

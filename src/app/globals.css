@@ -335,7 +335,7 @@ body {
   /* Corner radius */
   --s: 30px;
   /* Increased inner curve size */
-  --x: 100px;
+  --x: 180px;
   /* Horizontal offset */
   --y: 10px;
   /* Increased vertical offset for a deeper dip */
