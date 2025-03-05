@@ -44,11 +44,11 @@ const NavbarTwo = () => {
 
     return (
         <div
-            className={`fixed  w-full z-50 transition-all duration-500   rounded-br-2xl rounded-bl-xl border border-[#00000031] ${isScrolled ? "bg-gradient-to-r  from-[#edce67] to-[#e5010c59] backdrop-blur-lg shadow-md h-[110px] px-20 py-2" : "h-[90px] px-16"
+            className={`fixed  w-full z-50 transition-all duration-500   rounded-br-2xl rounded-bl-xl ${isScrolled ? "bg-gradient-to-r  from-[#edce67] to-[#ff3d46] shadow-md h-[110px] px-20 py-2" : "h-[90px] px-16"
                 }`}
         >
             <div className="flex justify-between">
-                <div className="relative overflow-hidden text-2xl leading-6 text-black uppercase cursor-pointer group">
+                <div className="relative overflow-hidden text-2xl leading-6 text-[#eed478] uppercase cursor-pointer group">
                     <Link href="/">
                         <img
                             src={navLogo.src}
@@ -66,7 +66,7 @@ const NavbarTwo = () => {
                 </div>
                 <div className="flex gap-10 items-center mt-4">
                     <div
-                        className="relative h-10 overflow-hidden text-xl leading-6 text-black uppercase cursor-pointer group">
+                        className="relative h-10 overflow-hidden text-xl leading-6 text-[#eed478] uppercase cursor-pointer group">
                         <Link className={`${isActive ? "" : ""}`} href="/">
                             <span className="group-hover:-translate-y-[120%] inline-block p-1 transition duration-500 ease-out">
                                 <p className="flex items-center gap-1">HOME<FaHome /></p>
@@ -80,7 +80,7 @@ const NavbarTwo = () => {
                     </div>
 
                     <div className="relative group">
-                        <div className="relative h-10 overflow-hidden text-xl leading-6 text-black uppercase cursor-pointer">
+                        <div className="relative h-10 overflow-hidden text-xl leading-6 text-[#eed478] uppercase cursor-pointer">
 
                             <Link href="/" className="relative block">
                                 <span className="group-hover:-translate-y-[120%] inline-block p-1 transition duration-500 ease-out">
@@ -121,7 +121,7 @@ const NavbarTwo = () => {
                     </div>
 
                     <div
-                        className="relative h-10 overflow-hidden text-xl leading-6 text-black uppercase cursor-pointer group">
+                        className="relative h-10 overflow-hidden text-xl leading-6 text-[#eed478] uppercase cursor-pointer group">
                         <Link className={`${isActive ? "" : ""}`} href="/">
                             <span className="group-hover:-translate-y-[120%] inline-block p-1 transition duration-500 ease-out">
                                 <p className="flex items-center gap-1">About us </p>

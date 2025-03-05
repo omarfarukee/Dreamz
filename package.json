@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "file-saver": "^2.0.5",
     "framer-motion": "^12.4.2",

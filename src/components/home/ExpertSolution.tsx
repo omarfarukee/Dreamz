@@ -1,11 +1,22 @@
 import Image from "next/image";
 import img from "@/assets/images/img.png"
+import Marquee from "react-fast-marquee";
 export default function ExpertSolution() {
 
 
 
     return (
-        <section className="relative h-[810px] z-10">
+        <main>
+            <Marquee gradient={false} speed={100} pauseOnHover={false} className="bg-red-600">
+                <h1 className="text-9xl uppercase font-bold text-[#fcd462] bg-red-600 p-2">* DREAMZ Instrument technology * </h1>
+            </Marquee>
+            <div className="-rotate-2 absolute left-0 mt-2">
+                <Marquee gradient={false} speed={200} pauseOnHover={false} className="bg-red-600 p-2">
+                    <h1 className="text-9xl uppercase font-bold text-[#fcd462] bg-red-600 p-2">* DREAMZ Instrument technology * </h1>
+                </Marquee>
+            </div>
+              <section className="relative h-[810px] z-10 mt-20">
+            
                {/* gradient bg  */}
                <div className="gradient-bg   lg:h-[120vh] w-[1300px]  absolute top-[-40%] left-[-20%]"></div>
             {/* gradient bg end */}
@@ -19,5 +30,7 @@ export default function ExpertSolution() {
                     data-aos-duration="3000" className="bg-gradient-to-r  from-[#e5010b] to-[#ffc947] bg-clip-text text-transparent"> Solution </p></div>
             </div>
         </section>
+        </main>
+      
     );
 }
