@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import navLogo from "@/assets/logo/logo2.png";
-import { FaHome } from "react-icons/fa";
 import { GoChevronDown } from "react-icons/go";
 import { GiGemChain, GiGoldBar, GiGoldNuggets, GiGoldStack, GiMeltingMetal } from "react-icons/gi";
 import { MdDiamond } from "react-icons/md";
@@ -45,11 +44,11 @@ const NavbarTwo = () => {
 
     return (
         <div
-            className={`fixed  w-full z-50 transition-all duration-500   rounded-br-2xl rounded-bl-xl ${isScrolled ? "bg-gradient-to-r  from-[#edce67] to-[#ff3d46] shadow-md h-[110px] px-20 py-2" : "h-[90px] px-16"
+            className={`fixed  w-full z-50 transition-all duration-500   rounded-br-2xl rounded-bl-xl ${isScrolled ? "bg-gradient-to-r  from-[#edce67] to-[#f8787e] shadow-md h-[110px] px-20 py-2" : "h-[90px] px-16"
                 }`}
         >
             <div className="flex justify-between">
-                <div className="relative overflow-hidden text-2xl leading-6 text-[#eed478] uppercase cursor-pointer group">
+                <div className="relative overflow-hidden text-2xl leading-6 text-white uppercase cursor-pointer group">
                     <Link href="/">
                         <img
                             src={navLogo.src}
@@ -67,27 +66,27 @@ const NavbarTwo = () => {
                 </div>
                 <div className="flex gap-10 items-center mt-4">
                     <div
-                        className="relative h-10 overflow-hidden text-xl leading-6 text-[#eed478] uppercase cursor-pointer group">
-                        <Link className={`${isActive ? "" : ""}`} href="/">
+                        className="relative h-10 overflow-hidden text-xl leading-6  uppercase cursor-pointer group">
+                        <Link className={`${isActive ? "text-red-600" : "text-white"}`} href="/">
                             <span className="group-hover:-translate-y-[120%] inline-block p-1 transition duration-500 ease-out">
-                                <p className="flex items-center gap-1">HOME<FaHome /></p>
+                                <p className="flex items-center gap-1">HOME</p>
                             </span>
                         </Link>
-                        <Link className={`${isActive ? "" : ""}`} href="/">
+                        <Link className={`${isActive ? "text-red-600" : "text-white"}`} href="/">
                             <span className="absolute left-0 rotate-12 inline-block translate-y-[120%] p-1 transition duration-500 ease-out group-hover:-translate-y-0 group-hover:rotate-0">
-                                <p className="flex items-center gap-1">HOME<FaHome /></p>
+                                <p className="flex items-center gap-1">HOME</p>
                             </span>
                         </Link>
                     </div>
 
                     <div className="relative group">
-                        <div className="relative h-10 overflow-hidden text-xl leading-6 text-[#eed478] uppercase cursor-pointer">
+                        <div className="relative h-10 overflow-hidden text-xl leading-6 text-white uppercase cursor-pointer">
 
                             <Link href="/" className="relative block">
                                 <span className="group-hover:-translate-y-[120%] inline-block p-1 transition duration-500 ease-out">
                                     <p className="flex items-center gap-1">products <GoChevronDown /></p>
                                 </span>
-                                <span className="absolute left-0 rotate-12 inline-block translate-y-[130%] p-1 transition duration-500 ease-out group-hover:-translate-y-0 group-hover:rotate-0">
+                                <span className="absolute left-0 rotate-12 inline-block translate-y-[140%] p-1 transition duration-500 ease-out group-hover:-translate-y-0 group-hover:rotate-0">
                                     <p className="flex items-center gap-1">products <GoChevronDown /></p>
                                 </span>
                             </Link>
@@ -96,19 +95,19 @@ const NavbarTwo = () => {
                         </div>
 
                         <div className="submenu absolute rounded-lg ">
-                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
-                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" />
+                            {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" /> */}
                             <div className=" left-0  opacity-0 invisible transform justify-center flex translate-y-4  transition-all duration-300 text-black  rounded-lg  group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
-                                <ul className="flex w-[65%] mt-12 justify-center flex-wrap gap-5">
+                                <ul className="flex w-[65%] mt-12 justify-center flex-wrap gap-5 ml-5">
                                     {categories.map((item) => (
                                         <Link key={item.id} href={`/${item?.slug}`} className="submenu-item text-xl flex px-4 py-2 hover:text-red-500 w-[300px] items-center ">
-                                            <p>{item?.category === "gold melting machine" && <GiMeltingMetal className="text-6xl text-[#e7c65b]" />}</p>
-                                            <p></p>{item?.category === "diamond testing machine" && <MdDiamond className="text-6xl text-[#e7c65b]" />}
-                                            <p></p>{item?.category === "gold hallmark machine" && <GiGoldBar className="text-6xl text-[#e7c65b]" />}
-                                            <p></p>{item?.category === "gold testing machine" && <GiGoldStack className="text-6xl text-[#e7c65b]" />}
-                                            <p></p>{item?.category === "gold cleaning" && <AiFillGold className="text-6xl text-[#e7c65b]" />}
-                                            <p></p>{item?.category === "gold refining machine" && <GiGoldNuggets className="text-6xl text-[#e7c65b]" />}
-                                            <p></p>{item?.category === "chain making machine" && <GiGemChain className="text-6xl text-[#e7c65b]" />}
+                                            <p>{item?.category === "gold melting machine" && <GiMeltingMetal className="text-6xl text-red-600" />}</p>
+                                            <p></p>{item?.category === "diamond testing machine" && <MdDiamond className="text-6xl text-red-600" />}
+                                            <p></p>{item?.category === "gold hallmark machine" && <GiGoldBar className="text-6xl text-red-600" />}
+                                            <p></p>{item?.category === "gold testing machine" && <GiGoldStack className="text-6xl text-red-600" />}
+                                            <p></p>{item?.category === "gold cleaning" && <AiFillGold className="text-6xl text-red-600" />}
+                                            <p></p>{item?.category === "gold refining machine" && <GiGoldNuggets className="text-6xl text-red-600" />}
+                                            <p></p>{item?.category === "chain making machine" && <GiGemChain className="text-6xl text-red-600" />}
 
                                             {item.category}</Link>
 
@@ -122,14 +121,14 @@ const NavbarTwo = () => {
                     </div>
 
                     <div
-                        className="relative h-10 overflow-hidden text-xl leading-6 text-[#eed478] uppercase cursor-pointer group">
+                        className="relative h-10 overflow-hidden text-xl leading-6 text-white uppercase cursor-pointer group">
                         <Link className={`${isActive ? "" : ""}`} href="/">
                             <span className="group-hover:-translate-y-[120%] inline-block p-1 transition duration-500 ease-out">
                                 <p className="flex items-center gap-1">About us </p>
                             </span>
                         </Link>
                         <Link className={`${isActive ? "" : ""}`} href="/">
-                            <span className="absolute left-0 rotate-12 inline-block translate-y-[122%] p-1 transition duration-500 ease-out group-hover:-translate-y-0 group-hover:rotate-0">
+                            <span className="absolute left-0 rotate-12 inline-block translate-y-[130%] p-1 transition duration-500 ease-out group-hover:-translate-y-0 group-hover:rotate-0">
                                 <p className="flex items-center gap-1">About us</p>
                             </span>
                         </Link>

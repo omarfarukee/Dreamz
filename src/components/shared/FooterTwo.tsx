@@ -35,9 +35,9 @@ export function FooterTwo() {
             </div>
 
             {/* Animated background effects */}
-            <div className="absolute inset-0 overflow-hidden ">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" />
+            <div className="absolute inset-0 overflow-hidden bg-[#f4c522]">
+                {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" /> */}
                 {/* Floating particles */}
                 <div className="absolute top-0 left-0 w-full h-full">
                     {[...Array(3)].map((_, i) => (
@@ -62,7 +62,7 @@ export function FooterTwo() {
                         <div className="flex items-center gap-3">
                             <Image src={navLogo} alt='logo' className='w-40'/>
                         </div>
-                        <p className=" leading-relaxed text-lg">
+                        <p className=" leading-relaxed text-lg ">
                             Where innovation meets elegance. Creating digital experiences that leave a lasting impression.
                         </p>
                         <div className="pt-4">
@@ -75,7 +75,7 @@ export function FooterTwo() {
 
                     {/* Navigation */}
                     <div className="md:col-span-3 space-y-8">
-                        <h3 className="text-[#c09128] font-semibold text-xl">Navigation</h3>
+                        <h3 className="text-red-600 font-semibold text-xl">Navigation</h3>
                         <ul className="space-y-4">
                             {['About', 'Services', 'Portfolio', 'Contact'].map((item) => (
                                 <li key={item}>
@@ -93,7 +93,7 @@ export function FooterTwo() {
 
                     {/* Connect section */}
                     <div className="md:col-span-4 space-y-8">
-                        <h3 className="text-[#c09128] font-semibold text-xl">Connect With Us</h3>
+                        <h3 className="text-red-600 font-semibold text-xl">Connect With Us</h3>
 
                         {/* Social Media Icons with enhanced hover effects */}
                         <div className="flex justify-start gap-6">

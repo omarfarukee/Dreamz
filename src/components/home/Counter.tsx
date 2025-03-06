@@ -38,11 +38,11 @@ const Counter = () => {
       <div className="flex justify-center flex-col items-center" data-aos="fade-up"
                         data-aos-duration="3000">
         <div>
-          <span className="text-5xl text-[#fcd462]">Dreamz</span>{" "}
+          <span className="text-5xl text-[#f4c522]">Dreamz</span>{" "}
           <span className="text-2xl">at a glance</span>
         </div>
         <div className="flex items-center text-xl gap-2 mt-5">
-          <TbCirclesRelation size={20} className="text-white" />
+          <TbCirclesRelation size={20} className="text-red-600" />
           <p>Innovating industries Empowering Solution</p>
         </div>
       </div>
@@ -53,24 +53,24 @@ const Counter = () => {
       </div>
 
       {counterOn && (
-        <div className="flex gap-5 mt-5 md:mt-16  w-[1200px] ml-[3%] overflow-hidden relative">
-          <div className="w-[32%]  h-56 rounded-2xl bg-[#fcd36233] p-3" data-aos="fade-up"
+        <div className="flex gap-5 mt-5 md:mt-16  w-[1200px]  overflow-hidden relative  pr-12  h-80">
+          <div className="w-[28%]  h-56 rounded-2xl bg-[#fcd36233] p-3 shadow-2xl z-20 relative ml-[3%]" data-aos="fade-up"
                         data-aos-duration="1000">
-            <p className="mt-2 text-9xl font-semibold text-[#fcd362]">
+            <p className="mt-2 text-9xl font-semibold text-[#f4c522]">
               <CountUp start={0} end={17} duration={4} delay={0} />+
             </p>
             <p className="text-xl font-semibold mt-2 ml-2 text-red-600">Years of Experience</p>
           </div>
-          <div className="w-[40%]  h-56  rounded-2xl border border-[#fcd36233] p-3" data-aos="fade-up"
+          <div className="w-[48%]  h-56  rounded-2xl border border-[#fcd36233] p-3 shadow-2xl" data-aos="fade-up"
                         data-aos-duration="1000"  data-aos-delay="500">
-            <p className="mt-2 text-9xl font-semibold text-[#fcd362]">
+            <p className="mt-2 text-9xl font-semibold text-[#f4c522]">
               <CountUp start={0} end={40000} duration={2} delay={0.5} />+
             </p>
             <p className="text-xl font-semibold mt-2 ml-2 text-red-600">Machine Sold</p>
           </div>
-          <div className="w-[32%]  h-56 rounded-2xl bg-[#fcd36233] p-3" data-aos="fade-up"
+          <div className="w-[28%]  h-56 rounded-2xl bg-[#fcd36233] p-3 shadow-2xl" data-aos="fade-up"
                         data-aos-duration="1000"  data-aos-delay="1000">
-            <p className="mt-2 text-9xl font-semibold text-[#fcd362]">
+            <p className="mt-2 text-9xl font-semibold text-[#f4c522]">
               <CountUp start={0} end={20} duration={3} delay={1} />+
             </p>
             <p className="text-xl font-semibold mt-2 ml-2 text-red-600">Monthly Services</p>

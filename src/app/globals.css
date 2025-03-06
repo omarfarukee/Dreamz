@@ -19,7 +19,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: "Oswald", serif;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
 
@@ -179,7 +179,7 @@ body {
   width: 100%;
   height: 400px;
   z-index: -1;
-  border:3px solid #fcd462;
+  border:3px solid #f4c522;
   border-top-left-radius:10px;
   border-top-right-radius:10px;
 }
@@ -293,25 +293,25 @@ body {
 
 
 /* sub menu css  */
-/* Submenu container */
+
 .submenu {
   position: absolute;
  left: -50vw;
-  top: 100%; /* Position the submenu right below the parent */
-  width: 105vw; /* Full viewport width */
-  height: 300px; /* Set the height */
-  background-color: white;
+  top: 100%; 
+  width: 110vw; 
+  min-height: 300px;
+  background-color: #ffda56;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20px); /* Start slightly below */
-  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s; /* Delayed visibility */
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s;
   z-index: 10;
 }
 
 .group:hover .submenu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0); /* Slide up to original position */
+  transform: translateY(0);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -322,23 +322,14 @@ body {
   transition: color 0.3s ease;
 }
 
-.submenu-item:hover {
-  color: blue; /* Highlight on hover */
-}
-
-
 /* sub menu css end  */
 
-
+/* for hero section */
 .custom-div {
   --r: 40px;
-  /* Corner radius */
   --s: 30px;
-  /* Increased inner curve size */
   --x: 180px;
-  /* Horizontal offset */
   --y: 10px;
-  /* Increased vertical offset for a deeper dip */
 
   width: 80vw;
   height: 80vh;
@@ -385,7 +376,7 @@ body {
 .bottom-right-box {
   margin-top: 50px;
   padding: 20px;
-  border-radius: 30px 0px 0px 0px; /* Swapped right curve to left */
+  border-radius: 30px 0px 0px 0px; 
   display: grid;
   place-items: center;
 }
@@ -394,28 +385,20 @@ body {
   content: "";
   position: absolute;
   top: -40px;
-  right: 0; /* Moved from left to right */
-  height: 40px;
+  right: 0;
+  height: 40px; 
   width: 40px;
   background: transparent;
-  
-  /* Adjusted border-radius for right-side effect */
   border-bottom-right-radius: 50%;
-
-  /* Box shadow adjusted for right alignment */
   box-shadow: 0 20px 0 0 #f4c522;
 }
 
 
 .mini-div {
   --r: 40px;
-  /* Corner radius */
   --s: 30px;
-  /* Increased inner curve size */
-  --x: 250px;
-  /* Horizontal offset */
+  --x: 14vw;
   --y: 10px;
-  /* Increased vertical offset for a deeper dip */
 
   width: 32%;
   height: 30vh;
@@ -438,4 +421,4 @@ body {
   
 }
 
-
+/* for hero section end*/

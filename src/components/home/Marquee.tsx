@@ -17,7 +17,7 @@ export function Marquees() {
 
             {/* Marquee for Left to Right */}
             <Marquee gradient={false} speed={100} pauseOnHover={false}>
-                <h1 className="text-9xl uppercase font-bold text-[#fcd462]">* DREAMS Instrument technology * </h1>
+                <h1 className="text-9xl uppercase font-bold text-[#f4c522]">* DREAMS Instrument technology * </h1>
             </Marquee>
             <div
                 className="absolute top-44 left-1/2  z-10"
@@ -32,7 +32,7 @@ export function Marquees() {
 
             <div className="mt-28 relative z-20">
                 <Marquee gradient={false} speed={100} pauseOnHover={false} direction="right">
-                    <h1 className="text-9xl uppercase font-bold text-[#fcd462] ">* DREAMS Instrument technology *</h1>
+                    <h1 className="text-9xl uppercase font-bold text-[#f4c522] ">* DREAMS Instrument technology *</h1>
                 </Marquee>
             </div>
         </div>

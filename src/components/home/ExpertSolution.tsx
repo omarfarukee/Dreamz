@@ -8,17 +8,17 @@ export default function ExpertSolution() {
     return (
         <main>
             <Marquee gradient={false} speed={100} pauseOnHover={false} className="bg-red-600">
-                <h1 className="text-9xl uppercase font-bold text-[#fcd462] bg-red-600 p-2">* DREAMZ Instrument technology * </h1>
+                <h1 className="text-9xl uppercase font-bold text-[#f4c522] bg-red-600 p-2">* DREAMZ Instrument technology * </h1>
             </Marquee>
             <div className="-rotate-2 absolute left-0 mt-2">
                 <Marquee gradient={false} speed={200} pauseOnHover={false} className="bg-red-600 p-2">
-                    <h1 className="text-9xl uppercase font-bold text-[#fcd462] bg-red-600 p-2">* DREAMZ Instrument technology * </h1>
+                    <h1 className="text-9xl uppercase font-bold text-[#f4c522] bg-red-600 p-2">* DREAMZ Instrument technology * </h1>
                 </Marquee>
             </div>
               <section className="relative h-[810px] z-10 mt-20">
             
                {/* gradient bg  */}
-               <div className="gradient-bg   lg:h-[120vh] w-[1300px]  absolute top-[-40%] left-[-20%]"></div>
+               <div className="gradient-bg   lg:h-[120vh] w-[1300px]  absolute top-[-40%] left-[-20%]"></div> 
             {/* gradient bg end */}
             <div>
                 <div className="text-[20em] h-[400px] font-bold text-transparent uppercase  inline-block   overflow-hidden"

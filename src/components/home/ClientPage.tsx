@@ -167,7 +167,23 @@ export default function ClientPage() {
 
   return (
     <main className="min-h-screen  text-white overflow-hidden relative">
-
+        <div className="absolute w-full">
+          <svg width="100%" height="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" stroke="#f4c7222a" stroke-width="1">
+                        <path d="M 0 200 C 200 250, 300 350, 300 200 S 500 250, 600 300 S 700 350, 1000 100" />
+                        <path d="M 0 200 C 200 230, 300 330, 300 200 S 500 230, 600 280 S 700 330, 1000 100" />
+                        <path d="M 0 200 C 200 210, 300 310, 300 200 S 500 210, 600 260 S 700 310, 1000 100" />
+                        <path d="M 0 200 C 200 190, 300 290, 300 200 S 500 190, 600 240 S 700 290, 1000 100" />
+                        <path d="M 0 200 C 200 170, 300 270, 300 200 S 500 170, 600 220 S 700 270, 1000 100" />
+                        <path d="M 0 200 C 200 150, 300 250, 300 200 S 500 150, 600 200 S 700 250, 1000 100" />
+                        <path d="M 0 200 C 200 130, 300 230, 300 200 S 500 130, 600 180 S 700 230, 1000 100" />
+                        <path d="M 0 200 C 200 110, 300 210, 300 200 S 500 110, 600 160 S 700 210, 1000 100" />
+                        <path d="M 0 200 C 200 90, 300 190, 300 200 S 500 90, 600 140 S 700 190, 1000 100" />
+                        <path d="M 0 200 C 200 70, 300 170, 300 200 S 500 70, 600 120 S 700 170, 1000 100" />
+                        <path d="M 0 200 C 200 50, 300 150, 300 200 S 500 50, 600 100 S 700 150, 1000 100" />
+                    </g>
+                </svg>
+          </div>
       <div>
           <div className="flex justify-center mt-5 mb-20">
             <h1 className="text-5xl text-[#fcd462]">Our Honorable Clients</h1>

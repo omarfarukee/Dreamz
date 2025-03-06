@@ -11,7 +11,7 @@ const HeroSectionThree = () => {
     useEffect(() => {
         const interval = setTimeout(() => {
             setActiveSlider((prev) => (prev === 3 ? 1 : prev + 1));
-        }, 20000);
+        }, 600000);
         return () => clearTimeout(interval);
     }, [activeSlider]);
 
@@ -20,20 +20,23 @@ const HeroSectionThree = () => {
         <main className='min-h-[100vh] bg-[#f4c522] flex p-5'>
 
             <div className='w-[20%]  p-5 flex flex-col justify-between'>
-                <div className='mt-20 animate__animated animate__backInLeft'>
+                <div className='mt-20 animate__animated animate__backInLeft animate__delay-2s'>
                     <p className='text-lg font-bold text-red-600'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, esse natus magni error repellat libero sint voluptas quam animi praesentium?</p>
                     <button className='flex items-center gap-3 mt-5 bg-red-600/20  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
                     </button>
                 </div>
-                <div className='mini-div absolute bottom-[3%] bg-red-600/20 z-40 p-2 shadow-2xl animate__animated animate__backInLeft'>
+                <div className='mini-div absolute bottom-[3%] bg-red-600/20 z-40 p-2 shadow-2xl animate__animated animate__backInLeft animate__delay-2s'>
                     <div className='h-24  w-[50%] rounded-3xl'>
                         <img className='object-cover w-full h-full rounded-[35px] bg-transparent backdrop-blur-sm' src="/assets/gif/gif.gif" alt="" />
                     </div>
                     <div className='mt-5 p-2 border-t border-red-600'>
                         <h1 className='text-xl font-bold text-red-600'>This is the title</h1>
-                        <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam itaque corrupti excepturi esse nobis fugiat harum tempora, soluta expedita.</p>
+                        <div className='flex '>
+                             <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam itaque corrupti excepturi esse nobis fugiat harum tempora, soluta expedita.</p>
 
                         <p className='mt-5 text-3xl text-red-600 animate-float'>  <FiArrowDownRight /></p>
+                        </div>
+                       
                     </div>
 
 
@@ -64,10 +67,10 @@ const HeroSectionThree = () => {
                 {/* Higher z-index so it appears above */}
 
                 {/* content section */}
-                <div className={`${activeSlider === 1 ? 'block' : 'hidden'}`}>
-                    <div className={`absolute top-[10%] left-10 z-40 w-[700px] h-[500px]`}>
+                <div className={` ${activeSlider === 1 ? 'block' : 'hidden'}`}>
+                    <div className={`absolute  pt-10 top-[10%] left-10 z-40 w-[700px] h-[500px]`}>
                         <div className='overflow-hidden'>
-                            <h1 className='text-9xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
+                            <h1 className='text-8xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
                         </div>
 
                         <div className='mt-5 overflow-hidden'>
@@ -81,9 +84,9 @@ const HeroSectionThree = () => {
                     </div>
                 </div>
                 <div className={`${activeSlider === 2 ? 'block' : 'hidden'}`}>
-                    <div className={`absolute top-[10%] left-10 z-40 w-[700px] h-[500px]`}>
+                    <div className={`absolute top-[10%] pt-10 left-10 z-40 w-[700px] h-[500px]`}>
                         <div className='overflow-hidden'>
-                            <h1 className='text-9xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
+                            <h1 className='text-8xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
                         </div>
 
                         <div className='mt-5 overflow-hidden'>
@@ -97,9 +100,9 @@ const HeroSectionThree = () => {
                     </div>
                 </div>
                 <div className={`${activeSlider === 3 ? 'block' : 'hidden'}`}>
-                    <div className={`absolute top-[10%] left-10 z-40 w-[700px] h-[500px]`}>
+                    <div className={`absolute top-[10%] pt-10 left-10 z-40 w-[700px] h-[500px]`}>
                         <div className='overflow-hidden'>
-                            <h1 className='text-9xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
+                            <h1 className='text-8xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
                         </div>
 
                         <div className='mt-5 overflow-hidden'>
@@ -115,13 +118,13 @@ const HeroSectionThree = () => {
 
                 {/* content section end*/}
 
-                <div className='w-[20%] h-[100px] bg-[#f4c522] absolute bottom-[-1px] left-0 z-40 bottom-left-box'>
+                <div className='w-[20%] h-[14%] bg-[#f4c522] absolute bottom-[-1px] left-0 z-40 bottom-left-box'>
 
                 </div>
                 <div className='w-[20%] h-[10px] absolute bg-[#f4c522] bottom-[-4%] left-[20%] z-40 bottom-left-box'>
 
                 </div>
-                <div className='w-[20%] h-[200px] bg-[#f4c522] absolute bottom-[-1px] right-0 z-40 bottom-right-box'>
+                <div className='w-[20%] h-[27%] bg-[#f4c522] absolute bottom-[-1px] right-0 z-40 bottom-right-box'>
 
                 </div>
                 <div className='w-[20%] h-[10px] absolute bg-[#f4c522] bottom-[-5.3%] right-[20%] z-40 bottom-right-box'>
@@ -130,7 +133,7 @@ const HeroSectionThree = () => {
 
             </div>
             {/* video area  */}
-            <div className={`w-[15%] h-[33vh] animate__animated animate__fadeIn  right-[1%] bottom-[4%] rounded-3xl overflow-hidden shadow-2xl ${activeSlider === 1 ? 'block absolute' : 'hidden'}`}>
+            <div className={`w-[15%] h-[33vh] animate__animated animate__fadeIn right-[1%] bottom-[4%] rounded-3xl overflow-hidden shadow-2xl ${activeSlider === 1 ? 'block absolute' : 'hidden'}`}>
                 {/* Video Background */}
                 <div>
                     <video
@@ -216,26 +219,26 @@ const HeroSectionThree = () => {
 
             {/* counter */}
             {/* 1 */}
-            <div className='w-[40%] h-[110px] overflow-hidden absolute left-[40%] bottom-[4%]'>
-                 <div className={`h-full w-full absolute animate__animated animate__fadeInDown  flex ${activeSlider === 1 ? 'block absolute' : 'hidden'}`}>
+            <div className='w-[40%] h-[90px] overflow-hidden absolute left-[40%] bottom-[4%]'>
+                 <div className={`h-full w-full absolute animate__animated animate__fadeInDown flex ${activeSlider === 1 ? 'block absolute' : 'hidden'}`}>
                 {/* 1st slider */}
                 <div className='w-[33%] h-full'>
                     <div><p className="mt-2 text-5xl font-semibold text-red-600">
-                        <CountUp start={0} end={17} duration={4} delay={0} />+
+                        <CountUp start={0} end={17} duration={4} delay={2} />+
                     </p>
                         <p>Years off bond</p>
                     </div>
                 </div>
                 <div className='w-[33%] h-full'>
                     <div><p className="mt-2 text-5xl font-semibold text-red-600">
-                        <CountUp start={0} end={10000} duration={4} delay={0} />+
+                        <CountUp start={0} end={10000} duration={4} delay={2} />+
                     </p>
                         <p>imported machine</p>
                     </div>
                 </div>
                 <div className='w-[33%] h-full'>
                     <div><p className="mt-2 text-5xl font-semibold text-red-600">
-                        <CountUp start={0} end={33} duration={4} delay={0} />%
+                        <CountUp start={0} end={33} duration={4} delay={2} />%
                     </p>
                         <p>Shares</p>
                     </div>
@@ -244,7 +247,7 @@ const HeroSectionThree = () => {
             </div>
            
             {/* 2 */}
-            <div className='w-[40%] h-[110px] overflow-hidden absolute left-[40%] bottom-[4%]'>
+            <div className='w-[40%] h-[90px] overflow-hidden absolute left-[40%] bottom-[4%]'>
                   <div className={`h-full w-full absolute animate__animated animate__fadeInDown  flex ${activeSlider === 2 ? 'block absolute' : 'hidden'}`}>
                 {/* 1st slider */}
                 <div className='w-[33%] h-full'>
@@ -270,7 +273,7 @@ const HeroSectionThree = () => {
                 </div>
             </div>
             </div>
-            <div className='w-[40%] h-[110px] overflow-hidden absolute left-[40%] bottom-[4%]'>
+            <div className='w-[40%] h-[90px] overflow-hidden absolute left-[40%] bottom-[4%]'>
             <div className={`h-full w-full absolute animate__animated animate__fadeInDown  flex ${activeSlider === 3 ? 'block absolute' : 'hidden'}`}>
                 {/* 1st slider */}
                 <div className='w-[33%] h-full'>
@@ -300,23 +303,23 @@ const HeroSectionThree = () => {
 
 
             <div className="flex justify-center ">
-                <div className="flex items-center flex-col gap-2 absolute top-[40%] lg:left-[2%] animate__animated animate__backInLeft">
+                <div className="flex items-center flex-col absolute top-[50%] lg:left-[2%] animate__animated animate__backInLeft animate__delay-2s">
                     <button
-                        className={`transition-all duration-500 ${activeSlider === 1 ? 'text-red-600 text-5xl' : 'text-black text-4xl'}`}
+                        className={`transition-all duration-500 ${activeSlider === 1 ? 'text-red-600 text-4xl' : 'text-black text-3xl'}`}
                         onClick={() => setActiveSlider(1)}
                     >
-                        01
+                        01 
                     </button>
                     <div className="w-16 h-[1px] bg-red"></div>
                     <button
-                        className={`transition-all duration-500 ${activeSlider === 2 ? 'text-red-600 text-5xl' : 'text-black text-4xl'}`}
+                        className={`transition-all duration-500 ${activeSlider === 2 ? 'text-red-600 text-4xl' : 'text-black text-3xl'}`}
                         onClick={() => setActiveSlider(2)}
                     >
                         02
                     </button>
                     <div className="w-16 h-[1px] bg-red"></div>
                     <button
-                        className={`transition-all duration-500 ${activeSlider === 3 ? 'text-red-600 text-5xl' : 'text-black text-4xl'}`}
+                        className={`transition-all duration-500 ${activeSlider === 3 ? 'text-red-600 text-4xl' : 'text-black text-3xl'}`}
                         onClick={() => setActiveSlider(3)}
                     >
                         03

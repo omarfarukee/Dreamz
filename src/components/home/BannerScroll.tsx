@@ -102,7 +102,7 @@ export default function BannerScroll() {
     <main className="w-full  mt-20 mb-20 relative">
       <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[-3%] -z-10 left-[-20%]"></div>
       <div className="flex justify-center mt-20">
-        <h1 className="text-5xl text-[#fcd462]">Unveiling the Gold Making Art</h1>
+        <h1 className="text-5xl text-[#f4c522]">Unveiling the Gold Making Art</h1>
       </div>
       <section
         className="min-h-screen flex flex-nowrap items-center space-x-10 md:pl-[22%] pl-0"
@@ -136,13 +136,13 @@ export default function BannerScroll() {
         {data.map((item, index) => (
           <div
             key={item.id}
-            className="md:w-[100vh] w-[90%] md:mr-0 mr-20 shrink-0 rounded-3xl overflow-hidden relative group rotate-1"
+            className="md:w-[100vh] w-[90%]  shadow-2xl md:mr-0 mr-20 shrink-0 rounded-3xl overflow-hidden relative group rotate-1"
             ref={(el) => setRef(el, index)}
           >
             <div>
               <img
                 src={item.image}
-                className="w-full"
+                className="w-full "
                 alt={item.alt || `Image ${index + 1}`}
               />
             </div>

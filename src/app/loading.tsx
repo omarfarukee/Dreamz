@@ -124,7 +124,7 @@ export default function Loading({ children }: { children: React.ReactNode }) {
           setLoading(false); // Fully remove loader
           setContentVisible(true); // Show content
         }, 1000); // Exit animation duration (matches the transition time)
-      }, 100); // Default loading duration
+      }, 2000); // Default loading duration
 
       return () => clearTimeout(loaderTimeout);
     }
