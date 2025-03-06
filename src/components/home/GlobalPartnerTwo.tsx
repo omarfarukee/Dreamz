@@ -64,8 +64,23 @@ export default function Home() {
 
   return (
     <section className="relative">
-    <img src="/assets/wave/wave2.png" className=" w-full absolute top-[-40%]" alt="wave"/>
-
+       <div className="absolute w-full mt-40">
+          <svg width="100%" height="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" stroke="#f4c7222a" stroke-width="1">
+                        <path d="M 0 200 C 200 250, 300 350, 300 200 S 500 250, 600 300 S 700 350, 1000 100" />
+                        <path d="M 0 200 C 200 230, 300 330, 300 200 S 500 230, 600 280 S 700 330, 1000 100" />
+                        <path d="M 0 200 C 200 210, 300 310, 300 200 S 500 210, 600 260 S 700 310, 1000 100" />
+                        <path d="M 0 200 C 200 190, 300 290, 300 200 S 500 190, 600 240 S 700 290, 1000 100" />
+                        <path d="M 0 200 C 200 170, 300 270, 300 200 S 500 170, 600 220 S 700 270, 1000 100" />
+                        <path d="M 0 200 C 200 150, 300 250, 300 200 S 500 150, 600 200 S 700 250, 1000 100" />
+                        <path d="M 0 200 C 200 130, 300 230, 300 200 S 500 130, 600 180 S 700 230, 1000 100" />
+                        <path d="M 0 200 C 200 110, 300 210, 300 200 S 500 110, 600 160 S 700 210, 1000 100" />
+                        <path d="M 0 200 C 200 90, 300 190, 300 200 S 500 90, 600 140 S 700 190, 1000 100" />
+                        <path d="M 0 200 C 200 70, 300 170, 300 200 S 500 70, 600 120 S 700 170, 1000 100" />
+                        <path d="M 0 200 C 200 50, 300 150, 300 200 S 500 50, 600 100 S 700 150, 1000 100" />
+                    </g>
+                </svg>
+          </div>
     <main className="min-h-[120vh]  bg-gradient-to-b  text-white overflow-hidden relative">
         <div className="gradient-bg   lg:h-[800px] w-[1000px]  absolute top-[1%] -z-10 left-[20%]"></div>
       <div className="max-w-7xl mx-auto px-4 py-20">
@@ -76,8 +91,7 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col lg:flex-row items-center gap-8 relative mt-28">
-          <div className="relative w-[700px] h-[700px]" data-aos="fade-right"
-                        data-aos-duration="3000">
+          <div className="relative w-[700px] h-[700px]">
             <div className="absolute w-[600px] h-[600px] top-[50px] left-[50px] rounded-full border-2 border-yellow-300">
               <div className="absolute w-full h-full rounded-full border-2 border-[#fcd462]"></div>
               <div className="absolute w-[620px] h-[620px] -top-[10px] -left-[10px] rounded-full border-2 border-yellow-200"></div>
@@ -118,15 +132,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex-1 lg:ml-8" data-aos="fade-left"
-                        data-aos-duration="3000">
+          <div className="flex-1 lg:ml-8">
             <div 
-              className="bg-[#fcd3623a] backdrop-blur-sm rounded-2xl p-8 transform transition-all duration-1000"
+              className=" shadow-2xl rounded-2xl p-8 transform transition-all duration-1000"
             >
               <div className="mb-6 transition-opacity duration-1000">
-                <ActiveIcon className="w-12 h-12 text-[#fcd462] mb-4 transition-all duration-500" />
-                <h2 className="text-3xl font-bold mb-2 transition-all duration-500 uppercase">{partners[activeIndex].name}</h2>
-                <p className="text-gray-400 text-lg transition-all duration-500">{partners[activeIndex].description}</p>
+                <ActiveIcon className="w-12 h-12 text-[#ff2121] mb-4 transition-all duration-500 hidden" />
+                <h2 className="text-3xl text-[#f4c522] font-bold mb-2 transition-all duration-500 uppercase">{partners[activeIndex].name}</h2>
+                <p className="text-red-600 text-lg transition-all duration-500">{partners[activeIndex].description}</p>
               </div>
             </div>
           </div>

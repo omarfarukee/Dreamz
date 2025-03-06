@@ -99,7 +99,24 @@ const cardVariants = {
     const isInView = useInView(ref, { once: true });
   
     return (
-      <div className="min-h-screen py-24 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen py-24 ">
+        <div className="absolute w-full">
+                <svg width="100%" height="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" stroke="#f4c7221f" stroke-width="1">
+                        <path d="M 0 300 C 300 250, 300 350, 300 100 S 500 250, 600 300 S 700 350, 1000 100"></path>
+                        <path d="M 0 290 C 280 230, 300 330, 300 100 S 500 230, 600 280 S 700 330, 1000 100"></path>
+                        <path d="M 0 280 C 260 210, 300 310, 300 100 S 500 210, 600 260 S 700 310, 1000 100"></path>
+                        <path d="M 0 270 C 240 190, 300 290, 300 100 S 500 190, 600 240 S 700 290, 1000 100"></path>
+                        <path d="M 0 260 C 220 170, 300 270, 300 100 S 500 170, 600 220 S 700 270, 1000 100"></path>
+                        <path d="M 0 250 C 200 150, 300 250, 300 100 S 500 150, 600 200 S 700 250, 1000 100"></path>
+                        <path d="M 0 240 C 180 130, 300 230, 300 100 S 500 130, 600 180 S 700 230, 1000 100"></path>
+                        <path d="M 0 230 C 160 110, 300 210, 300 100 S 500 110, 600 160 S 700 210, 1000 100"></path>
+                        <path d="M 0 220 C 140 90, 300 190, 300 100 S 500 90, 600 140 S 700 190, 1000 100"></path>
+                        <path d="M 0 210 C 120 70, 300 170, 300 100 S 500 70, 600 120 S 700 170, 1000 100"></path>
+                        <path d="M 0 200 C 100 50, 300 150, 300 100 S 500 50, 600 100 S 700 150, 1000 100"></path>
+                    </g>
+                </svg>
+            </div>
         <div className="max-w-7xl mx-auto" ref={ref}>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -107,11 +124,11 @@ const cardVariants = {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-center mb-20"
           >
-            <h2 className="text-5xl font-bold text-[#fcd462] mb-4 relative inline-block">
+            <h2 className="text-5xl font-bold text-[#f4c522] mb-4 relative inline-block">
               Why Choose Us
              
             </h2>
-            <p className="text-xl text-gray-50 max-w-3xl mx-auto mt-6">
+            <p className="text-xl max-w-3xl mx-auto mt-6">
               Discover the unique advantages that set us apart and make us the perfect choice for your success.
             </p>
           </motion.div>
@@ -130,22 +147,22 @@ const cardVariants = {
                     duration: 0.2
                   }
                 }}
-                className="group relative rounded-2xl p-8 bg-[#fcd36234]  overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="group relative rounded-2xl p-8   overflow-hidden shadow-2xl transition-all duration-300"
               >
                 {/* Background gradient overlay */}
                 <motion.div 
-                  className="absolute inset-0 bg-gradient-to-br from-[#fcd462] to-[#d8b450] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute inset-0 bg-gradient-to-br from-[#f4c522] to-[#d8b450] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   initial={false}
                 />
                 
                 {/* Animated circles */}
                 <motion.div 
-                  className="absolute -right-4 -top-4 w-24 h-24 bg-red-200 rounded-full opacity-0 group-hover:opacity-20"
+                  className="absolute -right-4 -top-4 w-24 h-24 bg-red-600 rounded-full opacity-0 group-hover:opacity-20"
                   initial={{ scale: 0 }}
                   whileHover={{ scale: 4, transition: { duration: 0.5 } }}
                 />
                 <motion.div 
-                  className="absolute -left-4 -bottom-4 w-24 h-24 bg-red-300 rounded-full opacity-0 group-hover:opacity-20"
+                  className="absolute -left-4 -bottom-4 w-24 h-24 bg-red-600 rounded-full opacity-0 group-hover:opacity-5"
                   initial={{ scale: 0 }}
                   whileHover={{ scale: 3, transition: { duration: 0.5, delay: 0.1 } }}
                 />
@@ -161,13 +178,13 @@ const cardVariants = {
                   </motion.div>
                   
                   <motion.h3 
-                    className="text-2xl font-semibold text-[#fcd462] group-hover:text-red-600 mb-4 transition-colors duration-300"
+                    className="text-2xl font-semibold text-[#f4c522] group-hover:text-red-600 mb-4 transition-colors duration-300"
                   >
                     {feature.title}
                   </motion.h3>
                   
                   <motion.p 
-                    className="text-gray-50 group-hover:text-red-500 transition-colors duration-300"
+                    className=" group-hover:text-red-500 transition-colors duration-300"
                   >
                     {feature.description}
                   </motion.p>
@@ -175,7 +192,7 @@ const cardVariants = {
   
                 {/* Corner accent */}
                 <motion.div
-                  className="absolute top-0 right-0 w-0 h-0 border-t-[80px] border-r-[80px] border-t-transparent border-r-red-100 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                  className="absolute top-0 right-0 w-0 h-0 border-t-[80px] border-r-[80px] border-t-transparent border-r-red-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
                   initial={false}
                 />
               </motion.div>

@@ -79,7 +79,7 @@ export default function VideoSection() {
             <div className="gradient-bg  lg:h-[800px] w-[1000px] -z-20 absolute top-[-20%] "></div>
             {/* gradient bg end */}
 
-            <h1 className="text-[20em] font-bold uppercase absolute top-[5%] text-[#9c9c9c0c]">Dreamz</h1>
+            <h1 className="text-[20em] font-bold uppercase absolute top-[5%] text-[#ff34340c]">Dreamz</h1>
 
             <video
                 ref={videoRef}
