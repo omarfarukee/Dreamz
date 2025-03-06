@@ -17,6 +17,7 @@ type TMachine = {
   img_3: string;
   description: string;
   features:string
+  
 };
 
 type TProps = {
@@ -24,20 +25,20 @@ type TProps = {
 };
 const ProductCard = ({ slug }: TProps) => {
     const [machines, setMachines] = useState<TMachine[]>([]);
-    const [loading, setLoading] = useState(true); // Loading state
+    const [loading, setLoading] = useState(true);
   
     useEffect(() => {
   
       const fetchMachines = async () => {
         try {
-          setLoading(true); // Start loading
-          const response = await fetch("/machines.json"); // Adjust path if needed
+          setLoading(true);
+          const response = await fetch("/machines.json");
           const data: TMachine[] = await response.json();
           setMachines(data)
         } catch (error) {
           console.error("Error fetching machines:", error);
         } finally {
-          setLoading(false); // Stop loading
+          setLoading(false);
         }
       };
   
