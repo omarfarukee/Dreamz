@@ -48,11 +48,7 @@ export default function RootLayout({
           <BottomToTop />
           <LenisSmoothScroll />
           <main>{children}</main>
-
-
           <FooterTwo />
-
-
         </body>
       </Loading>
 

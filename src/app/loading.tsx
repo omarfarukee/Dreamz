@@ -140,11 +140,11 @@ export default function Loading({ children }: { children: React.ReactNode }) {
       {/* Loader */}
       {loading && (
         <div
-          className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-[#000] text-white z-[1000] transition-all duration-1000 ${
+          className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-[#ffe68a] text-white z-[1000] transition-all duration-1000 ${
             animateOut ? "-translate-y-full opacity-0" : "translate-y-0 opacity-100"
           }`}
         >
-          <div className="text-5xl font-thin uppercase tracking-[20px] flex text-white">
+          <div className="text-5xl font-thin uppercase tracking-[20px] flex text-red-600">
             {loadingText.split("").map((char, index) => (
               <span
                 key={index}

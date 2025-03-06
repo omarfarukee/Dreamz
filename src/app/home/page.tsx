@@ -7,9 +7,10 @@ import Counter from "@/components/home/Counter";
 import ExpertSolution from "@/components/home/ExpertSolution";
 import GlobalPartnerTwo from "@/components/home/GlobalPartnerTwo";
 import HeroSectionThree from "@/components/home/HeroSectionThree";
+import HomeProductCategory from "@/components/home/HomeProductCategory";
 import { Marquees } from "@/components/home/Marquee";
 import PersonTwo from "@/components/home/PersonTwo";
-// import ProductCard from "@/components/home/ProductCard";
+
 import VideoSection from "@/components/home/VideoSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import AOS from "aos";
@@ -26,7 +27,7 @@ export default function HomePage() {
       <ExpertSolution />
       <PersonTwo/>
       <Counter/>
-      {/* <ProductCard slug={""}/> */}
+      <HomeProductCategory/>
       <VideoSection/>
       <Marquees/>
       <ClientPage/>

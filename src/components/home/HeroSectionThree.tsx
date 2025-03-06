@@ -47,22 +47,22 @@ const HeroSectionThree = () => {
 
             </div>
             <div className='w-[80%] custom-div  relative animate__animate animate__bounceIn'>
-                <div className="absolute inset-0 bg-black/50 z-40"></div>
+                <div className="absolute inset-0 bg-black/20 z-40"></div>
                 {/* Add relative and lower z-index */}
                 <img
                     className={`w-full relative z-10 animate__animated animate__fadeIn ${activeSlider === 1 ? 'block' : 'hidden'}`}
                     alt='card'
-                    src="https://media.wired.com/photos/6423826d7f6ce88e606d7b55/16:9/w_1900,h_1069,c_limit/Lamborghini-Revuelto-Featured-Gear.jpg"
+                    src="/assets/art/5.png"
                 />
                 <img
                     className={`w-full relative z-10 animate__animated animate__fadeIn ${activeSlider === 2 ? 'block' : 'hidden'}`}
                     alt='card'
-                    src="https://autodesignmagazine.com/wp-content/uploads/2024/05/IG7ZVY_New_Ferrari_V12_ext_02_red_media-1920x0_G6WF13.jpg"
+                    src="/assets/art/2.png"
                 />
                 <img
                     className={`w-full relative z-10 animate__animated animate__fadeIn ${activeSlider === 3 ? 'block' : 'hidden'}`}
                     alt='card'
-                    src="https://www.motortrend.com/files/66744ad99326e80008e5cda7/bugatti-hypercar-four-door-render-motortrend-ryan-lugo-design.jpg"
+                    src="/assets/art/3.png"
                 />
                 {/* Higher z-index so it appears above */}
 
