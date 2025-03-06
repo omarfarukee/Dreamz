@@ -26,7 +26,7 @@ export default function HomePage() {
       <ExpertSolution />
       <PersonTwo/>
       <Counter/>
-      <ProductCard/>
+      <ProductCard slug={""}/>
       <VideoSection/>
       <Marquees/>
       <ClientPage/>
