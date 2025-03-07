@@ -11,7 +11,7 @@ const HeroSectionThree = () => {
     useEffect(() => {
         const interval = setTimeout(() => {
             setActiveSlider((prev) => (prev === 3 ? 1 : prev + 1));
-        }, 600000);
+        }, 6000);
         return () => clearTimeout(interval);
     }, [activeSlider]);
 
@@ -19,20 +19,20 @@ const HeroSectionThree = () => {
     return (
         <main className='min-h-[100vh] bg-[#f4c522] flex p-5'>
 
-            <div className='w-[20%]  p-5 flex flex-col justify-between'>
+            <div className='w-[20%]  flex flex-col justify-between'>
                 <div className='mt-20 animate__animated animate__backInLeft animate__delay-2s'>
-                    <p className='text-lg font-bold text-red-600'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, esse natus magni error repellat libero sint voluptas quam animi praesentium?</p>
+                    <p className=' font-bold text-red-600'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, esse natus magni error repellat libero sint voluptas quam animi praesentium?</p>
                     <button className='flex items-center gap-3 mt-5 bg-red-600/20  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
                     </button>
                 </div>
                 <div className='mini-div absolute bottom-[3%] bg-red-600/20 z-40 p-2 shadow-2xl animate__animated animate__backInLeft animate__delay-2s'>
-                    <div className='h-24  w-[50%] rounded-3xl'>
+                    <div className='h-[10vh]  w-[50%] rounded-3xl'>
                         <img className='object-cover w-full h-full rounded-[35px] bg-transparent backdrop-blur-sm' src="/assets/gif/gif.gif" alt="" />
                     </div>
                     <div className='mt-5 p-2 border-t border-red-600'>
-                        <h1 className='text-xl font-bold text-red-600'>This is the title</h1>
+                        <h1 className='font-bold text-red-600'>This is the title</h1>
                         <div className='flex '>
-                             <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam itaque corrupti excepturi esse nobis fugiat harum tempora, soluta expedita.</p>
+                             <p className='text-sm '>Lorem ipsum dolor sit amet consectetu esse nobis fugiat harum tempora, soluta expedita.</p>
 
                         <p className='mt-5 text-3xl text-red-600 animate-float'>  <FiArrowDownRight /></p>
                         </div>
@@ -52,17 +52,17 @@ const HeroSectionThree = () => {
                 <img
                     className={`w-full relative z-10 animate__animated animate__fadeIn ${activeSlider === 1 ? 'block' : 'hidden'}`}
                     alt='card'
-                    src="/assets/art/5.png"
+                    src="/assets/banner/2.jpeg"
                 />
                 <img
                     className={`w-full relative z-10 animate__animated animate__fadeIn ${activeSlider === 2 ? 'block' : 'hidden'}`}
                     alt='card'
-                    src="/assets/art/2.png"
+                    src="/assets/banner/4.jpeg"
                 />
                 <img
                     className={`w-full relative z-10 animate__animated animate__fadeIn ${activeSlider === 3 ? 'block' : 'hidden'}`}
                     alt='card'
-                    src="/assets/art/3.png"
+                    src="/assets/banner/3.jpeg"
                 />
                 {/* Higher z-index so it appears above */}
 
@@ -70,12 +70,12 @@ const HeroSectionThree = () => {
                 <div className={` ${activeSlider === 1 ? 'block' : 'hidden'}`}>
                     <div className={`absolute  pt-10 top-[10%] left-10 z-40 w-[700px] h-[500px]`}>
                         <div className='overflow-hidden'>
-                            <h1 className='text-8xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
+                            <h1 className='text-7xl text-yellow-100 animate__animated animate__fadeInUp'>Skyray Trusted Global Partner</h1>
                         </div>
 
                         <div className='mt-5 overflow-hidden'>
                             <div className='animate__animated animate__fadeInUp'>
-                                <p className='text-[#eed478]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
+                                <p className='text-[#eed478] w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
                                 <button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
                                 </button>
                             </div>
@@ -86,12 +86,12 @@ const HeroSectionThree = () => {
                 <div className={`${activeSlider === 2 ? 'block' : 'hidden'}`}>
                     <div className={`absolute top-[10%] pt-10 left-10 z-40 w-[700px] h-[500px]`}>
                         <div className='overflow-hidden'>
-                            <h1 className='text-8xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
+                            <h1 className='text-7xl text-yellow-100 animate__animated animate__fadeInUp'>fasti Trusted Global Partner</h1>
                         </div>
 
                         <div className='mt-5 overflow-hidden'>
                             <div className='animate__animated animate__fadeInUp'>
-                                <p className='text-[#eed478]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
+                                <p className='text-[#eed478] w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
                                 <button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
                                 </button>
                             </div>
@@ -102,12 +102,12 @@ const HeroSectionThree = () => {
                 <div className={`${activeSlider === 3 ? 'block' : 'hidden'}`}>
                     <div className={`absolute top-[10%] pt-10 left-10 z-40 w-[700px] h-[500px]`}>
                         <div className='overflow-hidden'>
-                            <h1 className='text-8xl text-red-600 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
+                            <h1 className='text-7xl text-yellow-100 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
                         </div>
 
                         <div className='mt-5 overflow-hidden'>
                             <div className='animate__animated animate__fadeInUp'>
-                                <p className='text-[#eed478]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
+                                <p className='text-[#eed478] w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
                                 <button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
                                 </button>
                             </div>
@@ -219,7 +219,7 @@ const HeroSectionThree = () => {
 
             {/* counter */}
             {/* 1 */}
-            <div className='w-[40%] h-[90px] overflow-hidden absolute left-[40%] bottom-[4%]'>
+            <div className='w-[50%] h-[90px] overflow-hidden absolute left-[36%] bottom-[2%]'>
                  <div className={`h-full w-full absolute animate__animated animate__fadeInDown flex ${activeSlider === 1 ? 'block absolute' : 'hidden'}`}>
                 {/* 1st slider */}
                 <div className='w-[33%] h-full'>
@@ -247,7 +247,7 @@ const HeroSectionThree = () => {
             </div>
            
             {/* 2 */}
-            <div className='w-[40%] h-[90px] overflow-hidden absolute left-[40%] bottom-[4%]'>
+            <div className='w-[50%] h-[90px] overflow-hidden absolute left-[36%] bottom-[2%]'>
                   <div className={`h-full w-full absolute animate__animated animate__fadeInDown  flex ${activeSlider === 2 ? 'block absolute' : 'hidden'}`}>
                 {/* 1st slider */}
                 <div className='w-[33%] h-full'>
@@ -273,7 +273,7 @@ const HeroSectionThree = () => {
                 </div>
             </div>
             </div>
-            <div className='w-[40%] h-[90px] overflow-hidden absolute left-[40%] bottom-[4%]'>
+            <div className='w-[50%] h-[90px] overflow-hidden absolute left-[36%] bottom-[2%]'>
             <div className={`h-full w-full absolute animate__animated animate__fadeInDown  flex ${activeSlider === 3 ? 'block absolute' : 'hidden'}`}>
                 {/* 1st slider */}
                 <div className='w-[33%] h-full'>
@@ -303,7 +303,7 @@ const HeroSectionThree = () => {
 
 
             <div className="flex justify-center ">
-                <div className="flex items-center flex-col absolute top-[50%] lg:left-[2%] animate__animated animate__backInLeft animate__delay-2s">
+                <div className="flex items-center flex-col absolute top-[47%] lg:left-[2%] animate__animated animate__backInLeft animate__delay-2s">
                     <button
                         className={`transition-all duration-500 ${activeSlider === 1 ? 'text-red-600 text-4xl' : 'text-black text-3xl'}`}
                         onClick={() => setActiveSlider(1)}

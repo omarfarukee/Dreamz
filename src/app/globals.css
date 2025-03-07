@@ -296,11 +296,11 @@ body {
 
 .submenu {
   position: absolute;
- left: -50vw;
+  left: -50vw;
   top: 100%; 
   width: 110vw; 
   min-height: 300px;
-  background-color: #ffda56;
+  background-color: #ffeca7;
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
@@ -397,7 +397,7 @@ body {
 .mini-div {
   --r: 40px;
   --s: 30px;
-  --x: 14vw;
+  --x: 11vw;
   --y: 10px;
 
   width: 32%;

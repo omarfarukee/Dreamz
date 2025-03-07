@@ -151,7 +151,7 @@ const SingleMachine = (id: TMachine) => {
                     </motion.div></h1>
 
                     {/* Dots Navigation */}
-                    <div className="absolute right-[120%] top-1/2 transform -translate-y-1/2 flex flex-col gap-8" data-aos="fade-right" data-aos-duration="2000">
+                    <div className="absolute right-[115%] top-1/2 transform -translate-y-1/2 flex flex-col gap-8" data-aos="fade-right" data-aos-duration="2000">
                         {images.map((_, index) => (
                             <button
                                 key={index}
@@ -168,7 +168,7 @@ const SingleMachine = (id: TMachine) => {
 
 
                 <div className="mt-20 border-t border-b h-[200px] flex items-center justify-between w-[90%]" >
-                    <h1 className="text-8xl text-red-600 uppercase" data-aos="fade-up" data-aos-duration="3000">{singleMachine[0]?.machine_name}</h1>
+                    <h1 className="text-7xl text-red-600 uppercase" data-aos="fade-up" data-aos-duration="3000">{singleMachine[0]?.machine_name}</h1>
                     <div className="flex gap-10" data-aos="fade-up" data-aos-duration="3000">
                         <div className="flex items-center gap-2">
                             <SiRelianceindustrieslimited className="text-6xl text-red-600" />

@@ -97,10 +97,10 @@ const NavbarTwo = () => {
                         <div className="submenu absolute rounded-lg ">
                             {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,215,0,0.15),transparent_70%)]" />
                             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,20,60,0.1),transparent_70%)]" /> */}
-                            <div className=" left-0  opacity-0 invisible transform justify-center flex translate-y-4  transition-all duration-300 text-black  rounded-lg  group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
-                                <ul className="flex w-[65%] mt-12 justify-center flex-wrap gap-5 ml-5">
+                            <div className=" left-0  opacity-0 invisible transform  pl-10 justify-center flex translate-y-4  transition-all duration-300 text-black  rounded-lg  group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+                                <ul className="flex w-[65%] ml-[3%] mt-[2%] justify-center flex-wrap gap-5">
                                     {categories.map((item) => (
-                                        <Link key={item.id} href={`/${item?.slug}`} className="submenu-item text-xl flex px-4 py-2 hover:text-red-500 w-[300px] items-center ">
+                                        <Link key={item.id} href={`/${item?.slug}`} className="submenu-item text-xl flex gap-1 px-4 py-2 hover:text-red-500 w-[300px] items-center ">
                                             <p>{item?.category === "gold melting machine" && <GiMeltingMetal className="text-6xl text-red-600" />}</p>
                                             <p></p>{item?.category === "diamond testing machine" && <MdDiamond className="text-6xl text-red-600" />}
                                             <p></p>{item?.category === "gold hallmark machine" && <GiGoldBar className="text-6xl text-red-600" />}

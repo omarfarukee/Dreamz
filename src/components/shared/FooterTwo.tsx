@@ -12,7 +12,7 @@ export function FooterTwo() {
     }, []);
 
     return (
-        <footer className="relative min-h-[80vh]">
+        <footer className="relative min-h-[80vh] mt-20">
 
             {/* Wave Pattern */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
