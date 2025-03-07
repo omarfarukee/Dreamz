@@ -8,7 +8,7 @@ const PersonTwo = () => {
         <div className="h-[100vh] w-full  relative z-10 flex justify-center mt-40 t">
             <div className="absolute w-full">
                 <svg width="100%" height="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-                    <g fill="none" stroke="#f4c7221f" stroke-width="1">
+                    <g fill="none" stroke="#f4c7221f" strokeWidth="1">
                         <path d="M 0 300 C 300 250, 300 350, 300 100 S 500 250, 600 300 S 700 350, 1000 100"></path>
                         <path d="M 0 290 C 280 230, 300 330, 300 100 S 500 230, 600 280 S 700 330, 1000 100"></path>
                         <path d="M 0 280 C 260 210, 300 310, 300 100 S 500 210, 600 260 S 700 310, 1000 100"></path>

@@ -66,7 +66,7 @@ export default function Home() {
     <section className="relative">
        <div className="absolute w-full mt-40">
           <svg width="100%" height="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-                    <g fill="none" stroke="#f4c7222a" stroke-width="1">
+                    <g fill="none" stroke="#f4c7222a" strokeWidth="1">
                         <path d="M 0 200 C 200 250, 300 350, 300 200 S 500 250, 600 300 S 700 350, 1000 100" />
                         <path d="M 0 200 C 200 230, 300 330, 300 200 S 500 230, 600 280 S 700 330, 1000 100" />
                         <path d="M 0 200 C 200 210, 300 310, 300 200 S 500 210, 600 260 S 700 310, 1000 100" />
