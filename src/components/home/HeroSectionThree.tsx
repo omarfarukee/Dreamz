@@ -75,9 +75,9 @@ const HeroSectionThree = () => {
 
                         <div className='mt-5 overflow-hidden'>
                             <div className='animate__animated animate__fadeInUp'>
-                                <p className='text-[#eed478] w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
-                                <button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
-                                </button>
+                                <p className='text-white w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
+                               <a href="http://en.skyray-instrument.com/" target='_blank'><button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
+                                </button></a> 
                             </div>
 
                         </div>
@@ -91,25 +91,25 @@ const HeroSectionThree = () => {
 
                         <div className='mt-5 overflow-hidden'>
                             <div className='animate__animated animate__fadeInUp'>
-                                <p className='text-[#eed478] w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
-                                <button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
-                                </button>
+                                <p className='text-white w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
+                               <a href="https://fasti.it/en/home/" target='_blank'><button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
+                                </button></a> 
                             </div>
 
                         </div>
                     </div>
                 </div>
                 <div className={`${activeSlider === 3 ? 'block' : 'hidden'}`}>
-                    <div className={`absolute top-[10%] pt-10 left-10 z-40 w-[700px] h-[500px]`}>
+                    <div className={`absolute top-[10%] pt-10 left-10 z-40 w-[800px] h-[500px]`}>
                         <div className='overflow-hidden'>
-                            <h1 className='text-7xl text-yellow-100 animate__animated animate__fadeInUp'>Skyay Trusted Global Partner</h1>
+                            <h1 className='text-7xl text-yellow-100 animate__animated animate__fadeInUp'>Mettler toledo Trusted Global Partner</h1>
                         </div>
 
                         <div className='mt-5 overflow-hidden'>
                             <div className='animate__animated animate__fadeInUp'>
-                                <p className='text-[#eed478] w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
-                                <button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
-                                </button>
+                                <p className='text-white w-[80%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dignissimos facilis iste porro, vel aliquam saepe iure quaerat fuga corrupti corporis, in ea amet laborum perspiciatis qui? Culpa, quibusdam sint.</p>
+                                <a href="https://www.mt.com/int/en/home.html" target='_blank'><button className='flex items-center gap-3 mt-5 text-[#eed478] bg-red-600 text  px-4 py-2 rounded-3xl shadow-2xl'>Learn more <CiCircleMore size={30} />
+                                </button></a>
                             </div>
 
                         </div>
