@@ -47,7 +47,7 @@ const HeroSectionThree = () => {
 
             </div>
             <div className='w-[80%] custom-div  relative animate__animate animate__bounceIn'>
-                <div className="absolute inset-0 bg-black/20 z-40"></div>
+                {/* <div className="absolute inset-0 bg-black/20 z-40"></div> */}
                 {/* Add relative and lower z-index */}
                 <img
                     className={`w-full relative z-10 animate__animated animate__fadeIn ${activeSlider === 1 ? 'block' : 'hidden'}`}
