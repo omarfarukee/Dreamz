@@ -74,8 +74,8 @@ export default function VideoSection() {
 
 
     return (
-        <div className=" flex min-h-[100vh] justify-center items-center relative">
-            {/* gradient bg  */}
+        <div className=" flex min-h-[101vh] justify-center items-center relative">
+        
             <div className="gradient-bg  lg:h-[800px] w-[1000px] -z-20 absolute top-[-20%] "></div>
             {/* gradient bg end */}
 
